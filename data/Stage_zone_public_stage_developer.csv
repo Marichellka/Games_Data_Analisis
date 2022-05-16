@@ -1,0 +1,687 @@
+developerid,name,city,administrativedivision,country,founding_year
+1,0verflow,Tokyo,,Japan,1997
+2,11 bit studios,Warsaw,Masovian Voivodeship,Poland,2010
+3,1C Company,Moscow,,Russia,1991
+4,1-Up Studio,Tokyo,,Japan,2000
+5,2K Czech,Brno,,Czech Republic,1997
+6,2K Games,Novato,California,United States,2005
+7,2K Sports,Novato,California,United States,2005
+8,343 Industries,Redmond,Washington,United States,2009
+9,38 Studios,Providence,Rhode Island,United States,2006
+10,3D Realms,Garland,Texas,United States,1987
+11,42 Entertainment,Pasadena,California,United States,1993
+12,4A Games,KyivSliema,,Ukraine,2005
+13,5th Cell,Bellevue,Washington,United States,2003
+14,989 Studios,Foster City,California,United States,1995
+15,Acclaim Entertainment,Glen Cove,New York,United States,1987
+16,Acclaim Studios Austin,Santa Clara,California,United States,1991
+17,Accolade,San Jose,California,United States,1984
+18,Access Games,Osaka,,Japan,2002
+19,Access Software,Salt Lake City,Utah,United States,1982
+20,ACE Team,Santiago de Chile,,Chile,2007
+21,Aces Studio,Redmond,Washington,United States,
+22,Acquire,"Chiyoda, Tokyo",,Japan,1994
+23,Action Forms,Kyiv,,Ukraine,1995
+24,Active Gaming Media,Osaka,,Japan,2006
+25,Activision,Santa Monica,California,United States,1979
+26,Adventure Soft,Birmingham,England,United Kingdom,1992
+27,Akella,Moscow,,Russia,1995
+28,Alfa System,Kumamoto City,,Japan,1988
+29,AlphaDream,Tokyo,,Japan,2000
+30,Amazon Game Studios,Seattle,Washington,United States,2012
+31,"Amazon Game Studios, Orange County (formerly Double Helix Games)",Irvine,California,United States,2007
+32,Ambrella,Tokyo,,Japan,1996
+33,Amusement Vision,Tokyo,,Japan,2000
+34,Ancient,Hino,,Japan,1990
+35,Anino,Manila,,Philippines,2001
+36,Ankama Games,Roubaix,,France,2001
+37,Appy Entertainment,Carlsbad,California,United States,2008
+38,AQ Interactive,Tokyo,,Japan,2005
+39,Aquria,Kanagawa,,Japan,2002
+40,Arc System Works,Yokohama,,Japan,1988
+41,Arcane Kids,Los Angeles,California,United States,2010
+42,Arcen Games,Durham,North Carolina,United States,2009
+43,Arkane Studios,Lyon,,France,1999
+44,Arkedo Studio,Paris,,France,2006
+45,ArenaNet,Bellevue,Washington,United States,2000
+46,Arika,Tokyo,,Japan,1995
+47,"Art Co., Ltd",Tokyo,,Japan,1995
+48,Artdink,Tsukishima,,Japan,1986
+49,ArtePiazza,Tokyo,,Japan,1989
+50,Artificial Studios,Gainesville,Florida,United States,2001
+51,Artoon,Yokohama,,Japan,1999
+52,Arzest,Yokohama,,Japan,2010
+53,Ascaron,Gütersloh,,Germany,1989
+54,Asobo Studio,Bordeaux,,France,2002
+55,Atari,Pawtucket,Rhode Island,United States,1995
+56,Atlus,Tokyo,,Japan,1986
+57,Atomic Planet Entertainment,Middlesbrough,England,United Kingdom,2000
+58,Attic Entertainment Software,Albstadt,,Germany,1990
+59,Avalanche Studios Group,Stockholm,,Sweden,2003
+60,Aventurine SA,Athens,,Greece,2002
+61,Babaroga,Chicago,Illinois,United States,2001
+62,Backflip Studios,Boulder,Colorado,United States,2009
+63,Bandai Namco Entertainment,"Minato, Tokyo",,Japan,1955
+64,Bauhaus Entertainment,Tokyo,,Japan,2006
+65,B.B. Studio,Tokyo,,Japan,1994
+66,Beenox,Quebec City,Quebec,Canada,2000
+67,Behaviour Interactive,Montreal,Quebec,Canada,1992
+68,Behaviour Santiago,Santiago de Chile,,Chile,2002
+69,Bethesda Game Studios,Rockville,Maryland,United States,2001
+70,Bethesda Softworks,Rockville,Maryland,United States,2001
+71,Big Blue Bubble,Ontario,,Canada,2004
+72,Big Finish Games,Salt Lake City,Utah,United States,2007
+73,Big Huge Games,Baltimore,Maryland,United States,2000
+74,BioWare,Edmonton,Alberta,Canada,1995
+75,The Bitmap Brothers,London,England,United Kingdom,1987
+76,Best Way,Luhansk,,Ukraine,1991
+77,Bits Studios,London,England,United Kingdom,1991
+78,Bizarre Creations,Liverpool,England,United Kingdom,1994
+79,Black Forest Games,Offenburg,,Germany,2012
+80,Black Isle Studios,Orange County,California,United States,1996
+81,Black Rock Studio,Brighton,England,United Kingdom,1998
+82,Black Wing Foundation,Dnipro,,Ukraine,2006
+83,Blitz Games Studios,Leamington Spa,England,United Kingdom,1990
+84,Blizzard Entertainment,Irvine,California,United States,1991
+86,Bluepoint Games,Austin,Texas,United States,2006
+87,Blueside,Seoul,,South Korea,2003
+88,Blue Fang Games,Waltham,Massachusetts,United States,1998
+89,Blue Tongue Entertainment,Melbourne,Victoria,Australia,1995
+90,Bluehole,Seongnam,,South Korea,2007
+91,Bohemia Interactive,Prague,,Czech Republic,1999
+92,Boss Fight Entertainment,McKinney,Texas,United States,2013
+93,Boss Key Productions,Raleigh,North Carolina,United States,2014
+94,BreakAway Games,Hunt Valley,Maryland,United States,1998
+95,Brøderbund,Eugene,Oregon,United States,1980
+96,Bugbear Entertainment,Helsinki,,Finland,2000
+97,Bullfrog Productions,Guildford,England,United Kingdom,1987
+98,Bungie,Bellevue,Washington,United States,1991
+99,Camelot Software Planning,Tokyo,,Japan,1990
+100,Capcom,Osaka,,Japan,1979
+101,Capcom Vancouver,Burnaby,British Columbia,Canada,2005
+102,Carbine Studios,Aliso Viejo,California,United States,2005
+103,Cattle Call,Tokyo,,Japan,1998
+104,Cauldron,Bratislava,,Slovakia,1996
+105,Cave,"Shinjuku, Tokyo",,Japan,1994
+106,Cavia,Tokyo,,Japan,2000
+107,CCP Games,Reykjavík,,Iceland,1997
+108,CD Projekt Red,Warsaw,Masovian Voivodeship,Poland,2002
+109,Certain Affinity,Austin,Texas,United States,2006
+110,Chair Entertainment,Salt Lake City,Utah,United States,2005
+111,Chunsoft,"Shinjuku, Tokyo",,Japan,1984
+112,Cing,Fukuoka,,Japan,1999
+113,Clap Hanz,Yokohama,,Japan,1998
+114,Climax Entertainment,Tokyo,,Japan,1990
+115,Climax Studios,Portsmouth,England,United Kingdom,1988
+116,Clover Studio,Osaka,,Japan,2004
+117,Coded Illusions,Rotterdam,,Netherlands,2005
+118,Codemasters,Southam,England,United Kingdom,1985
+119,Coffee Stain Studios,Skövde,,Sweden,2010
+120,Cohort Studios,Cardiff,Wales,United Kingdom,2006
+121,Coktel Vision,Paris,,France,1985
+122,Colossal Order,Tampere,,Finland,2009
+123,Compile Heart,Tokyo,,Japan,2006
+124,Compulsion Games,Montreal,Quebec,Canada,2009
+125,Core Design,Derby,England,United Kingdom,1988
+126,Crafts & Meister,Osaka,,Japan,2004
+127,Crawfish Interactive,Croydon,England,United Kingdom,1997
+128,Creat Studios,Canton,Massachusetts,United States,1990
+129,Creative Assembly,Horsham,England,United Kingdom,1987
+130,Creatures,Tokyo,,Japan,1995
+131,Criterion Games,Guildford,England,United Kingdom,1993
+132,Croteam,Zagreb,,Croatia,1993
+133,Cryo Interactive,Paris,,France,1992
+134,Culture Brain Excel,Tokyo,,Japan,1980
+135,Crea-Tech,Tokyo,,Japan,1988
+136,Cryptic Studios,Los Gatos,California,United States,2000
+137,Crystal Dynamics,Redwood City,California,United States,1992
+138,Crytek,Frankfurt,,Germany,1999
+139,Crytek UK,Nottingham,England,United Kingdom,1999
+140,Cyan Worlds,Mead,Washington,United States,1987
+141,Cyanide,Nanterre,,France,2000
+142,CyberConnect2,Fukuoka,,Japan,1996
+143,Cyberlore Studios (Blueline Simulations[9]),Northampton,Massachusetts,United States,1992
+144,CyberStep,Tokyo,,Japan,2000
+145,Cygames,Tokyo,,Japan,2011
+146,Dambuster Studios,Nottingham,England,United Kingdom,2014
+147,Danger Close Games,Los Angeles,California,United States,1995
+148,Day 1 Studios,Chicago,Illinois,United States,2001
+149,Daybreak Game Company,San Diego,California,United States,1997
+150,Deadline Games,Copenhagen,,Denmark,1996
+151,Deck13,Frankfurt,,Germany,2001
+152,Deep Silver Volition,Champaign,Illinois,United States,1996
+153,Demiurge Studios,Cambridge,Massachusetts,United States,2002
+154,DeNA,Tokyo,,Japan,1999
+155,devCAT Studios (Nexon development 3rd division),Seoul,,South Korea,2001
+156,Developer House (Developer House Technology PVT LTD)[13],Panchkula,,India,2015
+157,Dhruva Interactive,Bangalore,,India,1997
+158,Die Gute Fabrik,Copenhagen,,Denmark,2006
+159,Digital Extremes,London,Ontario,Canada,1993
+160,Digital Eclipse,Emeryville,California,United States,1992
+161,Digitalmindsoft,Ulm,,Germany,2006
+162,Digital Reality,Budapest,,Hungary,1991
+163,Dimps,Osaka,,Japan,2000
+164,Disney Interactive Studios,Glendale,California,United States,1988
+165,Dontnod Entertainment,Paris,,France,2008
+166,DotEmu,Paris,,France,2007
+167,Double Fine Productions,San Francisco,California,United States,2000
+168,Dynamix,Eugene,Oregon,United States,1984
+169,Dovetail Games,Chatham,England,United Kingdom,2008
+171,EA Black Box,British Columbia,,Canada,1998
+172,EA Digital Illusions CE (EA DICE),Stockholm,,Sweden,1992
+173,EA Gothenburg,Gothenburg,,Sweden,2011
+174,EA Vancouver (formerly Distinctive Software),Burnaby,British Columbia,Canada,1982
+175,Eat Sleep Play,Salt Lake City,Utah,United States,2007
+176,Eko Software,Paris,,France,1999
+177,Egosoft,Würselen,,Germany,1988
+178,Eden Games,Lyon,,France,1998
+179,Eighting,Tokyo,,Japan,1993
+180,Electronic Arts,Redwood City,California,United States,1982
+181,EA Sports,Redwood City,California,United States,1982
+182,Elemental Games,Vladivostok,,Russia,1999
+183,Engine Software,Doetinchem,,Netherlands,1995
+184,Ensemble Studios,Dallas,Texas,United States,1995
+185,Epic Games,Cary,North Carolina,United States,1991
+186,Epics,Tokyo,,Japan,1987
+187,Epicenter Studios,Sherman Oaks,California,United States,2007
+188,Epyx,San Francisco,California,United States,1978
+189,ESA (formerly Softmax),Seoul,,South Korea,1994
+190,Étranges Libellules,Lyon,,France,1994
+191,Eugen Systems,Paris,,France,2000
+192,Eurocom,Derby,England,United Kingdom,1988
+193,Evolution Studios,Runcorn,England,United Kingdom,1999
+194,Examu,Tokyo,,Japan,2007
+195,Eyedentity Games,Seoul,,South Korea,2007
+196,F4,Paris,,France,2002
+197,Facepunch Studios,Walsall,England,United Kingdom,2009
+198,FarSight Studios,Big Bear Lake,California,United States,1989
+199,FASA Studio,Redmond,Washington,United States,1994
+200,Fatshark,Stockholm,,Sweden,2008
+201,feelplus,Tokyo,,Japan,1992
+202,Felistella,Gifu,,Japan,2010
+203,Firaxis Games,Sparks,Maryland,United States,1996
+204,Firefly Studios,London,England,United Kingdom,1999
+205,Firesprite,Liverpool,England,United Kingdom,2012
+206,First Star Software,Chappaqua,New York,United States,1982
+207,Flagship Studios,San Francisco,California,United States,2003
+208,Flight-Plan,Gifu,,Japan,1989
+209,Flying Wild Hog,Warsaw,,Poland,2009
+210,Focus Home Interactive,Paris,,France,1996
+211,Foundation 9 Entertainment,Emeryville,California,United States,1992
+212,Fox Digital Entertainment,Los Angeles,California,United States,2002
+213,FoxNext,Los Angeles,California,United States,2017
+214,Frictional Games,Helsingborg,,Sweden,2001
+215,Frogwares,Kyiv,,Ukraine,2000
+216,FromSoftware,Tokyo,,Japan,1986
+217,Frontier Developments,Cambridge,England,United Kingdom,1994
+218,Frozenbyte,Helsinki,,Finland,2001
+219,FTL Games,San Diego,California,United States,1982
+220,FUN Labs,Bucharest,,Romania,1999
+221,Funcom,Oslo,,Norway,1993
+222,FuRyu,Tokyo,,Japan,2007
+223,Futuremark,Espoo,,Finland,1997
+224,Gaijin Entertainment,Moscow,,Russia,2002
+227,GameHouse,Seattle,Washington,United States,1998
+228,Gameloft,Paris,,France,1999
+229,Ganbarion,Fukuoka,,Japan,1999
+230,Gearbox Software,Plano,Texas,United States,1999
+231,Geewa,Prague,,Czech Republic,2005
+232,Genius Sonority,Tokyo,,Japan,2002
+234,Glu Mobile,San Francisco,California,United States,2001
+235,Gogii Games,Moncton,New Brunswick,Canada,2006
+236,Good-Feel,Kobe,,Japan,2005
+237,Granzella,Nonoichi,,Japan,2011
+238,Grasshopper Manufacture,"Chiyoda, Tokyo",,Japan,1998
+239,Gravity,Seoul,,South Korea,2000
+240,Gray Matter Interactive,Los Angeles,California,United States,1993
+241,Gremlin Interactive,Sheffield,England,United Kingdom,1984
+242,Grezzo,"Shibuya, Tokyo",,Japan,2006
+243,Grinding Gear Games,Auckland,,New Zealand,2006
+244,Griptonite Games,Kirkland,Washington,United States,1994
+245,GSC Game World,Kyiv,,Ukraine,1995
+246,Guerrilla Cambridge,Cambridge,England,United Kingdom,1997
+247,Guerrilla Games,Amsterdam,,Netherlands,2000
+248,Gunfire Games,Austin,Texas,United States,2014
+249,GungHo Online Entertainment,"Chiyoda, Tokyo",,Japan,1998
+250,Gust,Nagano,,Japan,1993
+251,Haemimont Games,Sofia,,Bulgaria,1997
+252,HAL Laboratory,"Chiyoda, Tokyo",,Japan,1980
+253,Halfbrick,Brisbane,Queensland,Australia,2001
+254,Hanaho,Cerritos,California,United States,1992
+255,h.a.n.d.,Sapporo,,Japan,1993
+256,Hangar 13,Novato,California,United States,2014
+257,Harebrained Schemes,Seattle,Washington,United States,2011
+258,Harmonix Music Systems,Cambridge,Massachusetts,United States,1995
+259,Headstrong Games,London,England,United Kingdom,2000
+260,Heartbeat,Tokyo,,Japan,1992
+261,HB Studios,Lunenburg,Nova Scotia,Canada,2000
+262,HeroCraft,Kaliningrad,,Russia,2001
+263,High Impact Games,Burbank,California,United States,2003
+264,High Moon Studios,San Diego,California,United States,2005
+265,High Voltage Software,Hoffman Estates,Illinois,United States,1993
+266,Hoplon Infotainment,Florianópolis,Santa Catarina,Brazil,2004
+267,Hothead Games,Vancouver,British Columbia,Canada,2006
+268,Housemarque,Helsinki,,Finland,1995
+269,Hudson Soft,Tokyo,,Japan,1973
+270,Human Entertainment,Tokyo,,Japan,1983
+271,Human Head Studios,Madison,Wisconsin,United States,1997
+272,Humongous Entertainment,Bothell,Washington,United States,1992
+273,Hyperion Entertainment,Brussels,,Belgium,1999
+274,Ice-Pick Lodge,Moscow,,Russia,2002
+275,id Software,Mesquite,Texas,United States,1991
+276,Idea Factory,"Shibuya, Tokyo",,Japan,1994
+277,Idol Minds,Westminster,Colorado,United States,1997
+278,Imageepoch,Tokyo,,Japan,2005
+279,Image & Form,Gothenburg,,Sweden,1997
+280,Imagineer,Tokyo,,Japan,1986
+281,Infinity Ward,Woodland Hills,California,United States,2002
+282,Infocom,Cambridge,Massachusetts,United States,1979
+283,Incognito Entertainment,Salt Lake City,Utah,United States,1999
+284,Incredible Technologies,Arlington Heights,Illinois,United States,1985
+285,indieszero,Musashino,,Japan,1997
+286,Innerloop Studios,Oslo,,Norway,1996
+287,Insomniac Games,Burbank,California,United States,1994
+288,Intelligent Systems,Tokyo,,Japan,1986
+289,Interplay Entertainment,Beverly Hills,California,United States,1983
+290,Introversion Software,London,England,United Kingdom,2002
+291,inXile Entertainment,Newport Beach,California,United States,2002
+292,IO Interactive,Copenhagen,,Denmark,1998
+293,Ion Storm,Dallas,Texas,United States,1996
+294,Ion Storm Austin,Austin,Texas,United States,1997
+295,Irem,Hakusan,,Japan,1974
+296,Iron Galaxy Studios,Chicago,Illinois,United States,2008
+297,Iron Lore Entertainment,Maynard,Massachusetts,United States,2000
+298,Irrational Games,Quincy,Massachusetts,United States,1996
+299,Ivory Tower,Lyon,,France,2007
+300,Jadestone Group,Stockholm,,Sweden,2000
+301,Jagex,Cambridge,England,United Kingdom,2001
+302,Jaleco,Tokyo,,Japan,1974
+303,Jam City,Los Angeles,California,United States,2007
+304,Javaground,Irvine,Massachusetts,United States,2001
+305,Jupiter,Kyoto,,Japan,1996
+306,JV Games,Las Vegas,Nevada,United States,1999
+307,Kairosoft,Tokyo,,Japan,1996
+308,Kalypso Media,Worms,,Germany,2006
+309,Kaos Studios,New York City,New York,United States,2006
+310,Keen Software House,Prague,,Czech Republic,2010
+311,Kesmai,Charlottesville,Virginia,United States,1981
+312,Kiloo Games,Aarhus,,Denmark,2000
+313,King,Stockholm,,Sweden,2003
+314,Koei Tecmo Games (formerly Koei),Ashikaga,,Japan,1978
+315,KOG Studios,Seoul,,South Korea,2000
+316,Kojima Productions,Tokyo,,Japan,2005
+317,Konami,Tokyo MidtownMinato,,Japan,1969
+318,Kongzhong,Beijing,,China,2002
+319,Krome Studios,Brisbane,Queensland,Australia,1999
+320,Krome Studios Melbourne,Melbourne,Victoria,Australia,1988
+321,Kuju Entertainment,Shalford,England,United Kingdom,1998
+322,Kunos Simulazioni,Rome,,Italy,2005
+323,Kush Games,Camarillo,California,United States,1998
+324,Kuma Reality Games,New York City,New York,United States,2003
+325,Kylotonn,Paris,,France,2002
+326,Larian Studios,Oudenaarde,,Belgium,1996
+327,Legacy Interactive,Los Angeles,California,United States,1998
+328,Legend Entertainment,Chantilly,Virginia,United States,1989
+329,Legendo Entertainment,Gothenburg,,Sweden,2004
+330,Level-5,Fukuoka,,Japan,1998
+331,Lift London,London,England,United Kingdom,2012
+332,Limbic Entertainment,Langen,,Germany,2002
+333,Lionhead Studios,Guildford,England,United Kingdom,1997
+334,Liquid Entertainment,Pasadena,California,United States,1999
+335,Little Green Men Games,Zagreb,,Croatia,2006
+336,LK Avalon,"Świlcza, Rzeszów",,Poland,1989
+337,Llamasoft,Reading,England,United Kingdom,1982
+338,Linden Lab,San Francisco,California,United States,1999
+339,Locomotive Games,Santa Clara,California,United States,1997
+340,Looking Glass Studios,Cambridge,Massachusetts,United States,1990
+341,Love-de-Lic,Tokyo,,Japan,1995
+342,LucasArts,San Francisco,California,United States,1982
+343,Luma Arcade,Johannesburg,,South Africa,2006
+344,Luxoflux,Santa Monica,California,United States,1998
+345,MachineGames,Uppsala,,Sweden,2009
+346,Magenta Software,Liverpool,England,United Kingdom,1994
+347,MAGES.,"Shibuya, Tokyo",,Japan,2005
+348,Majesco Entertainment,Edison,New Jersey,United States,1986
+349,Marvelous,"Shibuya, Tokyo",,Japan,1997
+350,Massive Entertainment,Malmö,,Sweden,1997
+351,Masthead Studios,Sofia,,Bulgaria,2005
+352,Matrix Software,Tokyo,,Japan,1994
+353,Maxis,Emeryville,California,United States,1987
+354,Mean Hamster Software,Deer Park,Washington,United States,1985
+355,Media Molecule,Guildford,England,United Kingdom,2006
+356,Media.Vision,Tokyo,,Japan,1993
+357,Mediatonic,London,England,United Kingdom,2005
+358,MegaZebra,Munich,,Germany,2009
+359,Mercury Steam,Madrid,,Spain,2002
+360,Metropolis Software,Warsaw,,Poland,1992
+361,MicroProse Software,Hunt Valley,Maryland,United States,1982
+362,Microsoft Games Studio,Redmond,Washington,United States,2013
+363,Microsoft,Redmond,Washington,United States,2013
+364,Midway Games,Chicago,Illinois,United States,1988
+365,Midway Studios – Newcastle,Gateshead,England,United Kingdom,1996
+366,miHoYo,Shanghai,,China,2012
+367,Milestone,"Suginami, Tokyo",,Japan,2003
+368,Milestone srl,Milan,,Italy,1996
+369,Mimimi Games,Munich,,Germany,2011
+370,Mistwalker,Tokyo,,Japan,2004
+371,Mitchell Corporation,Tokyo,,Japan,1960
+372,MLB Advanced Media,New York City,New York,United States,2000
+373,Mode 7 Games,Brighton,East Sussex,United Kingdom,2005
+374,Mojang AB,Stockholm,,Sweden,2009
+375,Monolith Productions,Kirkland,Washington,United States,1994
+376,Monolith Soft,Tokyo,,Japan,1999
+377,Monster Games,Northfield,Minnesota,United States,1996
+378,Monte Cristo,Paris,,France,1995
+379,Moon Studios,Vienna,,Austria,2010
+380,MTO,Yokohama,,Japan,1996
+381,Mythic Entertainment,Fairfax,Virginia,United States,1995
+382,Nadeo,Paris,,France,2000
+383,Namco Tales Studio,Tokyo,,Japan,1986
+384,Namco,Tokyo,,Japan,1986
+385,Namco Bandai,Tokyo,,Japan,1986
+386,Nanobit,Zagreb,,Croatia,2008
+387,NAPS team,Messina,,Italy,1993
+388,Natsume,"Shinjuku, Tokyo",,Japan,1987
+389,NaturalMotion,London,England,United Kingdom,2001
+390,Naughty Dog,Santa Monica,California,United States,1986
+391,NCSoft,Seoul,,South Korea,1997
+392,NDcube,Tokyo,,Japan,2000
+393,NDOORS Corporation,Seoul,,South Korea,1999
+394,Neko Entertainment,Montreuil-sous-Bois,,France,1998
+395,Nerve Software,Richardson,Texas,United States,1999
+396,NetDevil,Louisville,Colorado,United States,1997
+397,NetDragon Websoft,Fuzhou,,China,1999
+398,NetEase,Guangzhou,,China,1997
+399,NetherRealm Studios,Chicago,Illinois,United States,2010
+400,Neverland,Tokyo,,Japan,1993
+401,Neversoft,Woodland Hills,California,United States,1994
+402,Nevosoft,St. Petersburg,,Russia,2002
+403,New World Computing,Agoura Hills,California,United States,1984
+404,New World Interactive,Denver,Colorado,United States,2010
+405,NexonNexon Korea,TokyoSeoul,,JapanSouth Korea,2002
+406,Next Level Games,Vancouver,British Columbia,Canada,2002
+407,Niantic,San Francisco,California,United States,2010
+408,Nibris,Kraków,,Poland,2000
+409,Nicalis,Santa Ana,California,United States,2007
+410,Nihon Falcom,Tokyo,,Japan,1981
+411,Nikita Online,St. Petersburg,,Russia,1991
+412,Nimble Giant Entertainment,Buenos Aires,,Argentina,2002
+413,Ninjabee,Orem,Utah,United States,2005
+414,Ninja Theory,Cambridge,England,United Kingdom,2000
+415,Nintendo,Kyoto,,Japan,1889
+416,Nippon Ichi Software,Kakamigahara,,Japan,1991
+417,Nival,St. Petersburg,,Russia,1996
+418,Nordeus,Belgrade,,Serbia,2009
+419,NovaLogic,Agoura Hills,California,United States,1985
+420,Novarama,Barcelona,,Spain,2003
+421,Now Production,Osaka,,Japan,1986
+422,Nude Maker,Tokyo,,Japan,2002
+423,n-Space,Orlando,Florida,United States,1994
+424,Obsidian Entertainment,Irvine,California,United States,2004
+425,Oddworld Inhabitants,San Luis Obispo,California,United States,1994
+426,Omega Force,Ashikaga,,Japan,1997
+427,Origin Systems,Austin,Texas,United States,1983
+428,OtherSide Entertainment,Boston,Massachusetts,United States,2013
+429,Outfit7,Ljubljana,,Slovenia,2010
+430,Outrage Entertainment,Ann Arbor,Michigan,United States,1996
+431,Overkill Software,Stockholm,,Sweden,2009
+432,Oxygen Studios,Croydon,England,United Kingdom,2006
+433,Page 44 Studios,San Francisco,California,United States,1998
+434,Pangea Software,Austin,Texas,United States,1987
+435,People Can Fly,Warsaw,,Poland,2002
+436,Project Sora,Tokyo,,Japan,2009
+437,Purple Lamp Studios,Vienna,,Austria,2018
+438,Papaya Studio,Irvine,California,United States,1999
+439,Project Soul,Tokyo,,Japan,1996
+440,Panther Games Pty Ltd,Canberra,,Australia,1985
+441,Paradox Development Studio,Stockholm,,Sweden,1995
+442,Parallax Software,Ann Arbor,Michigan,United States,1993
+443,Pandemic Studios,Los Angeles,California,United States,1998
+444,Pendulo Studios,Madrid,,Spain,1993
+445,Penguin Software,Geneva,Illinois,United States,1978
+446,Perfect World,Beijing,,China,2004
+447,Petroglyph,Las Vegas,Nevada,United States,2003
+448,Phantagram,Seoul,,South Korea,1994
+449,Phenomic Game Development,Ingelheim am Rhein,,Germany,1997
+450,Pipeworks Studios,Eugene,Oregon,United States,1999
+451,Piranha Bytes,Essen,,Germany,1997
+452,Piranha Games,Vancouver,British Columbia,Canada,2000
+453,Pi Studios,Houston,Texas,United States,2002
+454,Pivotal Games,Bath,England,United Kingdom,2000
+455,Pixel Federation,Bratislava,,Slovakia,2007
+456,Playdom,San Francisco,California,United States,2009
+457,Playfish,London,England,United Kingdom,2007
+458,PlayFirst,San Francisco,California,United States,2004
+459,Playground Games,Royal Leamington Spa,England,United Kingdom,2009
+460,PlatinumGames,Osaka,,Japan,2006
+461,Polyphony Digital,Tokyo,,Japan,1998
+462,PopCap Games,Seattle,Washington,United States,2000
+463,Press Play,Copenhagen,,Denmark,2006
+464,Psyonix,San Diego,California,United States,2001
+465,Punch Entertainment,Hanoi,,Vietnam,2005
+466,Pyro Mobile,Madrid,,Spain,1996
+467,Q Entertainment,Tokyo,,Japan,2003
+468,Q-Games,Nakagyō-ku,,Japan,2001
+469,Quantic Dream,Paris,,France,1997
+470,Quest Corporation,Tokyo,,Japan,1988
+471,Radical Entertainment,Vancouver,,Canada,1991
+472,Rage Games,Liverpool,England,United Kingdom,1992
+473,Rainbow Studios,Phoenix,Arizona,United States,1996
+474,Rare,Twycross,England,United Kingdom,1985
+475,Raven Software,Middleton,Wisconsin,United States,1990
+476,Ready at Dawn,Irvine,California,United States,2003
+477,Red Entertainment,Tokyo,,Japan,1976
+478,Reality Pump Studios,Kraków,,Poland,1995
+479,Realtime Associates,Los Angeles,California,United States,1986
+480,Realtime Worlds,Dundee,Scotland,United Kingdom,2002
+481,Rebellion Developments,Oxford,England,United Kingdom,1992
+482,Rebellion Warwick,Leamington Spa,England,United Kingdom,2013
+483,RedLynx,Helsinki,,Finland,2000
+484,Red Thread Games,Oslo,,Norway,2012
+485,Red Storm Entertainment,Cary,North Carolina,United States,1996
+486,RedTribe (Tribalant),Melbourne,Victoria,Australia,2003
+487,Reflexive Entertainment,Lake Forest,California,United States,1997
+488,Relic Entertainment,Vancouver,British Columbia,Canada,1997
+489,Remedy Entertainment,Espoo,,Finland,1995
+491,Reto-Moto,Copenhagen,,Denmark,2008
+492,Retro Studios,Austin,Texas,United States,1998
+493,Revolution Software,York,England,United Kingdom,1990
+494,Riot Games,Santa Monica,California,United States,2006
+495,Rising Star Games,Luton,England,United Kingdom,2004
+496,Robot Entertainment,Plano,Texas,United States,2009
+498,Rocksteady Studios,London,England,United Kingdom,2005
+499,Robinson Technologies,Hiroshima,,Japan,1989
+500,Rovio Entertainment,Espoo,,Finland,2003
+501,Ruffian Games,Dundee,Scotland,United Kingdom,2008
+502,Runic Games,Seattle,Washington,United States,2008
+503,Running with Scissors,Tucson,Arizona,United States,1997
+504,Saber Interactive,Millburn,New Jersey,United States,2001
+505,Sand Grain Studios,Bucharest,,Romania,2002
+506,Sandlot,Tokyo,,Japan,2001
+507,Sanzaru Games,Foster City,California,United States,2006
+508,Sir-Tech,Ogdensburg,New York,United StatesCanada,1979
+490,Respawn Entertainment,Los Angeles,California,United States,2010
+509,Schell Games,Pittsburgh,Pennsylvania,United States,2002
+510,SCS Software,Prague,,Czech Republic,1997
+511,Sega,"Ota, Tokyo,San Francisco",California,United States,1960
+512,SEGA Interactive R&D Division 1 (Sega AM1),Tokyo,,Japan,1984
+513,SEGA Interactive R&D Division 2 (Sega AM2),Ota,,Japan,1985
+514,Sega AM3,Tokyo,,Japan,1991
+515,Sega CS Research and Development No. 2 (Sonic Team),Tokyo,,Japan,1996
+516,Sega Sports R&D,Tokyo,,Japan,1994
+517,Sensible Software,Cambridge,England,United Kingdom,1986
+518,Shift,Kanagawa,,Japan,1996
+519,SIE Bend Studio,Bend,Oregon,United States,1993
+520,SIE San Mateo Studio (formerly SIE Foster City Studio),San Mateo,California,United States,1998
+521,SIE Japan Studio,Tokyo,,Japan,1993
+522,SIE London Studio,London,England,United Kingdom,2002
+523,SIE San Diego Studio,San Diego,California,United States,2001
+524,SIE Santa Monica Studio,Los Angeles,California,United States,1999
+525,SCE Studio Liverpool,Liverpool,England,United Kingdom,1984
+526,SIE Worldwide Studios,"Tokyo, Fukuoka, Santa Monica, Los Angeles, San Die","California, Washington, Oregon, England","Japan, United States, Netherlands, United Kingdom",2005
+527,SingleTrac,Salt Lake City,Utah,United States,1994
+528,Shengqu Games,Shanghai,,China,1999
+529,Sherman3D,Petaling Jaya,,Malaysia,2003
+530,Shin'en Multimedia,Munich,,Germany,1999
+531,Sierra Entertainment,Oakhurst,California,United States,1979
+532,Silicon Knights,St. Catharines,Ontario,Canada,1992
+533,Silicon Studio,Tokyo,,Japan,2000
+534,Simtex,Austin,Texas,United States,1988
+535,skip Ltd.,Tokyo,,Japan,2000
+536,Slant Six Games,Vancouver,British Columbia,Canada,2005
+537,Sledgehammer Games,Foster City,California,United States,2009
+538,Snail,Suzhou,,China,2000
+539,Snapshot Games,Sofia,,Bulgaria,2013
+540,Slightly Mad Studios,London,England,United Kingdom,2008
+541,Slipgate Ironworks,Aars,,Denmark,2017
+542,Slitherine Software,Epsom,England,United Kingdom,2000
+543,Smilegate,Seoul,,South Korea,2002
+544,SNK,Osaka,,Japan,2001
+545,Sobee Studios,Istanbul,,Turkey,2000
+546,Snowblind Studios,Seattle,Washington,United States,1997
+547,Software 2000,Eutin,,Germany,1987
+548,Sony Computer Entertainment,"Tokyo (SIE, Inc.) San Mateo (SIE, LLC)","Japan (SIE, Inc.) California (SIE, LLC)",United States,1994
+549,Sora Ltd.,Tokyo,,Japan,2005
+550,Spellbound Entertainment,Offenburg,,Germany,1994
+551,Spiders,Paris,,France,2008
+552,Spike,Tokyo,,Japan,1991
+553,Spike Chunsoft,Tokyo,,Japan,2012
+554,Spil Games,Hilversum,,Netherlands,2001
+555,Splash Damage,London,England,United Kingdom,2001
+556,Sproing Interactive Media,Vienna,,Austria,2001
+557,Square Enix,"Shinjuku, Tokyo",,Japan,1975
+558,Squad,Mexico City,,Mexico,2009
+559,Stainless Games,Newport,England,United Kingdom,1993
+560,Stainless Steel Studios,Cambridge,Massachusetts,United States,1998
+561,Starbreeze Studios,Uppsala,,Sweden,1998
+562,Stardock,Plymouth,Michigan,United States,1991
+563,Sting Entertainment,Tokyo,,Japan,1989
+564,Strategic Simulations,Sunnyvale,California,United States,1979
+565,Stoic Studio,Austin,Texas,United States,2011
+566,Strawdog Studios,Derby,England,United Kingdom,2003
+567,Straylight Studios,Dunedin,,New Zealand,2004
+568,Streamline Studios,Kuala Lumpur,,Malaysia,2001
+569,Success,Tokyo,,Japan,1978
+570,Sucker Punch Productions,Bellevue,Washington,United States,1997
+571,Sumo Digital,Sheffield,England,United Kingdom,2003
+572,Supercell,Helsinki,,Finland,2010
+573,Supermassive Games,Guildford,England,United Kingdom,2008
+574,SuperVillain Studios,Orange County,California,United States,2004
+575,Survios,Los Angeles,California,United States,2013
+576,Studio Wildcard,Kirkland,Washington,United States,2014
+577,Swingin' Ape Studios,Aliso Viejo,California,United States,2000
+578,StormRegion,Budapest,,Hungary,2001
+579,Sunstorm Interactive,Indianapolis,Indiana,United States,1995
+580,Syn Sophia,Tokyo,,Japan,1995
+581,SystemSoft Beta,Tokyo,,Japan,1999
+582,Taito,"Shinjuku, Tokyo",,Japan,1953
+583,Tango Gameworks,"Minato, Tokyo",,Japan,2010
+584,Tag Games,Dundee,Scotland,United Kingdom,2006
+585,TaleWorlds Entertainment,Ankara,,Turkey,2005
+586,Tamsoft,Asakusa,,Japan,1992
+587,T&E Soft,Aichi,,Japan,1982
+588,Tantrumedia,Wirral,England,United Kingdom,2003
+589,Tantalus Media,Melbourne,Victoria,Australia,1994
+590,Tarsier Studios,Malmö,,Sweden,2004
+591,Tate Multimedia,Warsaw,,Poland,2002
+592,Team17,Ossett,England,United Kingdom,1990
+593,Team Bondi,Sydney,New South Wales,Australia,2003
+594,Team Ico,Tokyo,,Japan,1997
+595,Team Ninja,Tokyo,,Japan,1995
+596,Techland,Ostrów Wielkopolski,,Poland,1991
+597,Tecmo,Tokyo,,Japan,1967
+598,Telltale Games,San Rafael,California,United States,2004
+599,Tencent,Shenzhen,,China,1998
+600,Tencent Games,Shenzhen,,China,2003
+601,Tequila Works,Madrid,,Spain,2009
+602,Terminal Reality,Lewisville,Texas,United States,1994
+603,Tetris Online,Honolulu,Hawaii,United States,2006
+604,Teyon,Kraków,,Poland,2006
+605,Thatgamecompany,Santa Monica,California,United States,2006
+606,The Chinese Room,Brighton,England,United Kingdom,2007
+607,The Coalition,Vancouver,,Canada,2010
+608,The Farm 51,Gliwice,,Poland,2005
+609,The Initiative,Santa Monica,California,United States,2018
+610,THQ,Agoura Hills,California,United States,1989
+611,THQ Nordic,ViennaKarlstad,,AustriaSweden,2011
+612,Three Fields Entertainment,Petersfield,England,United Kingdom,2014
+613,Three Rings Design,San Francisco,California,United States,2001
+614,TimeGate Studios,Sugar Land,Texas,United States,1998
+615,TiMi Studios,Shenzhen,,China,2008
+616,Toaplan,Tokyo,,Japan,1984
+617,ToeJam & Earl Productions,San Francisco,California,United States,1989
+618,Tokyo RPG Factory,Tokyo,,Japan,2014
+619,TopWare Interactive,Karlsruhe,,Germany,1995
+620,Torpex Games,Bellevue,Washington,United States,2005
+621,Torus Games,Bayswater,Victoria,Australia,1994
+622,Tose,Kyoto,,Japan,1979
+623,Toys for Bob,Novato,California,United States,1989
+624,Trapdoor,Montreal,Quebec,Canada,2010
+625,Transmission Games,Melbourne,Victoria,Australia,1996
+626,Traveller's Tales,Knutsford,England,United Kingdom,1990
+627,Treyarch,Santa Monica,California,United States,1996
+628,Treasure,Tokyo,,Japan,1992
+629,tri-Ace,Tokyo,,Japan,1995
+630,tri-Crescendo,Tokyo,,Japan,1999
+631,Trion Worlds,Redwood City,California,United States,2006
+632,Tripwire Interactive,Roswell,Georgia,United States,2005
+633,Triumph Studios,Delft,,Netherlands,1997
+634,Turn 10 Studios,Redmond,Washington,United States,2001
+635,Turtle Rock Studios,Lake Forest,California,United States,2002
+636,Two Point Studios,Surrey,England,United Kingdom,2016
+637,Two Tribes,Amersfoort,,Netherlands,2000
+638,Typhoon Games (HK),Hong Kong SAR,,China,2001
+639,Ubisoft,Montreuil-sous-Bois,,Europe,1986
+640,Ubisoft Blue Byte,Düsseldorf,,Germany,1988
+641,Ubisoft Reflections,Newcastle upon Tyne,England,United Kingdom,1984
+642,UEP Systems,Tokyo,,Japan,1985
+643,Ultimate Play the Game,Ashby-de-la-Zouch,England,United Kingdom,1982
+644,Undead Labs,Seattle,Washington,United States,2009
+645,United Front Games,Vancouver,British Columbia,Canada,2006
+646,United Game Artists,Tokyo,,Japan,1996
+647,Universomo,Tampere,,Finland,2002
+648,Valve,Kirkland,Washington,United States,1996
+649,Vanillaware,"Chūō-ku, Osaka",,Japan,2002
+650,Vanpool,Tokyo,,Japan,1999
+651,Venan Entertainment,Cromwell,Connecticut,United States,2002
+652,Vicarious Visions,Albany (Menands),New York,United States,1990
+653,Vigil Games,Austin,Texas,United States,2005
+654,Virtual Heroes,Raleigh,North Carolina,United States,2004
+655,Virtuos,,,Singapore,2004
+656,Visceral Games,Redwood City,California,United States,1998
+657,Visual Concepts,Novato,California,United States,1988
+658,Vostok Games,Kyiv,,Ukraine,2012
+659,VoxelStorm,Manchester,England,United Kingdom,2012
+660,Wahoo Studios,Orem,Utah,United States,2001
+661,Warhorse Studios,Prague,,Czech Republic,2011
+662,Wargaming,NicosiaMinsk,,CyprusBelarus,1998
+663,Wargaming Saint Petersburg,Saint Petersburg,,Russia,1991
+664,Wargaming Seattle,Redmond,Washington,United States,1998
+665,Warner Bros. Interactive Entertainment,Chicago,Illinois,United States,1988
+666,WB Games Boston (formerly Turbine),Needham,Massachusetts,United States,1994
+667,WB Games - Avalanche (formerly Avalanche Software),Salt Lake City,Utah,United States,1995
+668,Webfoot Technologies,Chicago,Illinois,United States,1993
+669,WeMade,Seoul,,South Korea,2000
+670,Westone Bit Entertainment,Tokyo,,Japan,1986
+671,Westwood Studios,Las Vegas,Nevada,United States,1985
+672,Wideload Games,Chicago,Illinois,United States,2003
+673,Wildfire Studios,Brisbane,Queensland,Australia,1995
+674,Wizet studio (Nexon development 1st division),Seoul,,South Korea,1999
+675,Wolfire Games,Berkeley,California,United States,2003
+676,World Forge,Voronezh,,Russia,2004
+677,Xbox Game Studios,Redmond,Washington,United States,2002
+678,XPEC Entertainment,Taipei,,Taiwan,2000
+679,Yager Development,Berlin,,Germany,1999
+680,Yuke's,Osaka,,Japan,1993
+681,ZeniMax Online Studios,Hunt Valley,Maryland,United States,2007
+682,Zen Studios,Budapest,,Hungary,2003
+683,Zipper Interactive,Redmond,Washington,United States,1995
+684,Zombie Studios,Seattle,Washington,United States,1994
+685,ZootFly,Ljubljana,,Slovenia,2002
+686,Zynga,San Francisco,California,United States,2007
+170,The Dovetail Group,,,United States,
+497,Rockstar Games,New York CityBangaloreLeedsLincolnLondonBallardval,New YorkKarnatakaEnglandScotlandMassachusettsCalif,United States,
+225,Game Arts,Tokyo,,Japan,1985
+226,Game Freak,Tokyo,,Japan,1989
+233,Genki,Tokyo,,Japan,1990
+85,Bloober Team,Kraków,Lesser Poland,Poland,2008
