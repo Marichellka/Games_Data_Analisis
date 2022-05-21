@@ -1,7 +1,7 @@
 platformid,code,name
-32,,windows
-33,,mac
-34,,linux
+32,Win,windows
+33,Mac,mac
+34,Linux,linux
 35,TG16,
 36,PSP,
 37,2600,
