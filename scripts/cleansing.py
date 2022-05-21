@@ -1,16 +1,28 @@
 import pandas as pd
+from pandas import DataFrame
 
-def read_data(path, *args):
-    dataFrame = pd.read_csv(path, *args)
-    return dataFrame
+def read_and_cleanse(dataset_path : str,
+    delete_columns : list = [],
+    mean_columns : list = [],
+    mode_columns : list = [],
+    **kwargs):
+    dataset = pd.read_csv(dataset_path, **kwargs)
+    for column in delete_columns:
+        dataset = dataset.drop(column, axis=1)
+    cleanse_data(dataset, mean_columns, mode_columns)
+    return dataset
 
+def cleanse_data(dataset : DataFrame,
+    mean_columns : list = [],
+    mode_columns : list = []):
+    for column in mean_columns:
+        replace_with_mean(dataset, column)
+    for column in mode_columns:
+        replace_with_mode(dataset, column)
 
-def fill_NaN_with_mean(dataFrame, columns):
-    dataFrame[columns]= dataFrame[columns].fillna(dataFrame[columns].mean())
-    return dataFrame
+def replace_with_mean(dataset : DataFrame):
+    dataset.fillna(dataset.mean(numeric_only=True), inplace=True)
 
-
-df = read_data('data/game_analysis.csv')
-df = fill_NaN_with_mean(df, ['averageplaytime'])
-print(df.info(), '\n')
-print(str(df.head()))
+def replace_with_mode(dataset : DataFrame):
+    for column in dataset.columns:
+        dataset[column].fillna(dataset[column].mode()[0], inplace=True)
