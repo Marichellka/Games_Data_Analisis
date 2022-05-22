@@ -15,14 +15,13 @@ def read_and_cleanse(dataset_path : str,
 def cleanse_data(dataset : DataFrame,
     mean_columns : list = [],
     mode_columns : list = []):
-    for column in mean_columns:
-        replace_with_mean(dataset, column)
-    for column in mode_columns:
-        replace_with_mode(dataset, column)
+    replace_with_mean(dataset, mean_columns)
+    replace_with_mode(dataset, mode_columns)
 
-def replace_with_mean(dataset : DataFrame):
-    dataset.fillna(dataset.mean(numeric_only=True), inplace=True)
+def replace_with_mean(dataset : DataFrame, columns : list):
+    for column in columns:
+        dataset[column].fillna(dataset[column].mean(numeric_only=True), inplace=True)
 
-def replace_with_mode(dataset : DataFrame):
-    for column in dataset.columns:
+def replace_with_mode(dataset : DataFrame, columns : list):
+    for column in columns:
         dataset[column].fillna(dataset[column].mode()[0], inplace=True)
