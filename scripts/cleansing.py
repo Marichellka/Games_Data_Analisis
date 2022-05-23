@@ -1,5 +1,7 @@
 import pandas as pd
-from pandas import DataFrame
+from pandas import DataFrame, Series
+from typing import Callable
+
 
 def read_and_cleanse(dataset_path : str,
     delete_columns : list = [],
@@ -19,36 +21,22 @@ def cleanse_data(dataset : DataFrame,
     replace_with_mean(dataset, mean_columns)
     replace_with_mode(dataset, mode_columns)
 
+
 def replace_with_mean(dataset : DataFrame, columns : list):
     for column in columns:
         dataset[column].fillna(dataset[column].mean(numeric_only=True), inplace=True)
+
 
 def replace_with_mode(dataset : DataFrame, columns : list):
     for column in columns:
         dataset[column].fillna(dataset[column].mode()[0], inplace=True)
 
 
-def refactor_data(dataset: DataFrame):
-    regions = {'NA_Sales':'North America', 'EU_Sales':'Europe', 
-    'JP_Sales':'Japan', 'Other_Sales':'Other'}
-    new_dataset = pd.DataFrame(columns = [])
-    for ind in range(len(dataset)):
-        row = dataset.iloc[ind:].head(1)
-        for key, value in regions.items():
-            new_row = row[['Name','Platform','Year','Genre','Publisher']]
-            new_row = insert_columns(new_row, columns=['Region', 'Region_Sales', 'Global_Sales'],
-                                    values=[[value], row[[key]].values[0], row[['Global_Sales']].values[0]])
-            new_dataset = pd.concat([new_dataset, new_row])
-    return new_dataset
-
-
-def insert_columns(row, columns, values):
-    for index in range(len(row.columns), \
-        len(row.columns)+len(columns)):
-        row.insert(index, columns[index], values[index])
-    return row
-        
-
-dataset = read_and_cleanse("data/vgsales.csv", delete_columns=['Rank'])
-refactor_data(dataset).to_csv('data/sales.csv')
-
+def stack_dataset(dataset: DataFrame, stack_cols : dict, new_cols : list, values_func : Callable):
+    old_cols = list(filter(lambda c: c not in stack_cols.keys(), dataset.columns))
+    new_rows = []
+    for _, row in dataset.iterrows():
+        for key, value in stack_cols.items():
+            new_row = [*row[old_cols], *values_func(row, key, value)]
+            new_rows.append(new_row)
+    return pd.DataFrame(data=new_rows, columns=[old_cols + new_cols])

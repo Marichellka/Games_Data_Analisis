@@ -1,4 +1,4 @@
-from scripts.cleansing import read_and_cleanse
+from scripts.cleansing import read_and_cleanse, stack_dataset
 from scripts.config import DATA_PATH_SALES
 from scripts.regressions.helpers import test_regression, train_test_dataset_split
 from scripts.regressions.linear import build_linear_regression

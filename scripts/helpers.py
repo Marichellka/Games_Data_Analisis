@@ -1,5 +1,6 @@
 from pandas import DataFrame
 
+
 def split_dataframe(
     dataset : DataFrame,
     first_cols : list,

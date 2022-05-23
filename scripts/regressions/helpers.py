@@ -3,6 +3,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from scripts.helpers import split_dataframe
 
+
 def test_regression(
     regression,
     x_test : DataFrame,
@@ -11,6 +12,7 @@ def test_regression(
     mean_erorr_result = mean_squared_error(y_test, predictions)
     r2_result = r2_score(y_test, predictions)
     return mean_erorr_result, r2_result
+
 
 def train_test_dataset_split(
     dataset : DataFrame,
