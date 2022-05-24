@@ -23,3 +23,9 @@ def train_test_dataset_split(
     x_train, y_train = split_dataframe(dataset_train, x_cols, y_cols)
     x_test, y_test = split_dataframe(dataset_test, x_cols, y_cols)
     return x_train, y_train, x_test, y_test
+
+
+def delete_useless_elements(list, useless_elements):
+    for elem in useless_elements:
+        list.remove(elem)
+    return list
