@@ -2,12 +2,16 @@ from scripts.cleansing import read_and_cleanse, stack_dataset
 from scripts.config import DATA_PATH_SALES
 from scripts.regressions.helpers import test_regression, train_test_dataset_split
 from scripts.regressions.linear import build_linear_regression
+from scripts.regressions.dataset_scaler import Dataset_scaler
 
 dataset = read_and_cleanse(DATA_PATH_SALES, mode_columns=["Year"])
 
-# TODO: Marichellka please add non-numeric columns to x_cols. 
-x_cols = ["Year"]
-y_cols = ["Global_Sales"]
+x_cols = delete_useless_elements(list(dataset.columns), 
+    useless_elements=["Name", "Publisher", "Global_Sales", "Region_Sales"])
+y_cols = ["Region_Sales"]
+
+dataset_scaler = Dataset_scaler(dataset)
+dataset_scaler.scale(x_cols)
 
 x_train, y_train, x_test, y_test = train_test_dataset_split(dataset, x_cols, y_cols)
 
