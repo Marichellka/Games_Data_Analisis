@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from pandas import DataFrame
 
+
 def plot_timeline(
     dataset : DataFrame,
     date_column : str,
