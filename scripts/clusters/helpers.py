@@ -1,9 +1,8 @@
-import pandas as pd
+from pandas import DataFrame
 import numpy as np
 import matplotlib.pyplot as plt
 from kneed import KneeLocator
 from sklearn.cluster import KMeans
-
 
 def draw_graph(x_range, y, labels):
     plt.figure(figsize=(10, 8))
@@ -15,12 +14,17 @@ def draw_graph(x_range, y, labels):
     plt.show()
 
 
-def get_max_kernels(features, kmeans_kwargs):
+def get_sum_of_square_errors(features: DataFrame, max_kernels: int, kmeans_kwargs: dict):
     sse = []
-    max_kernels = 10
     for k in range(1, max_kernels + 1):
-        kmeans = KMeans(n_clusters=k, **kmeans_kwargs)
-        kmeans.fit(features)
+        kmeans = KMeans(n_clusters=k, **kmeans_kwargs).fit(features)
         sse.append(kmeans.inertia_)
-        
-    return max_kernels, sse
+
+    return sse
+
+
+def get_clusters_count(sse: list, max_kernels: int):
+    """use elbow test"""
+    kl = KneeLocator(range(1, max_kernels + 1), sse,
+                     curve='convex', direction='decreasing')
+    return kl.elbow
