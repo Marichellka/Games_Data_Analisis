@@ -4,6 +4,6 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import PolynomialFeatures
 
 
-def build_polynomial_regression(x_train : DataFrame, y_train : DataFrame):
-    regression = make_pipeline(PolynomialFeatures(degree=4), LinearRegression()).fit(x_train, y_train)
+def build_polynomial_regression(x_train : DataFrame, y_train : DataFrame, degree : int):
+    regression = make_pipeline(PolynomialFeatures(degree=degree), LinearRegression()).fit(x_train, y_train)
     return regression
