@@ -2,12 +2,14 @@ from pandas import DataFrame
 
 class DatasetScaler:
 
-    def __init__(self, dataset: DataFrame):
-        self.__dataset=dataset
+    def __init__(self, dataset: DataFrame, columns : list = None):
+        self.__dataset=dataset.copy(True)
+        if (columns):
+            self.__scale(columns)
 
 
     @property
-    def get_scaled_dataset(self):
+    def scaled_dataset(self):
         return self.__dataset
 
 
@@ -15,7 +17,7 @@ class DatasetScaler:
         return self.__dictionary[column][value]
 
 
-    def scale(self, columns: list):
+    def __scale(self, columns : list):
         self.__dictionary = dict()
         for column in columns:
             self.__dictionary[column]=self.__get_column_dictionary(column)
