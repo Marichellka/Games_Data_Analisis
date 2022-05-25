@@ -1,6 +1,6 @@
 from scripts.cleansing import read_and_cleanse
 from scripts.config import DATA_PATH_SALES
-from scripts.regressions.dataset_scaler import Dataset_scaler
+from scripts.utils.dataset_scaler import DatasetScaler
 from scripts.helpers import delete_useless_elements
 from scripts.regressions.helpers import get_regression_model
 
@@ -10,7 +10,6 @@ x_cols = delete_useless_elements(list(dataset.columns),
     useless_elements=["Name", "Publisher", "Global_Sales", "Region_Sales"])
 y_cols = ["Region_Sales"]
 
-dataset_scaler = Dataset_scaler(dataset)
-dataset_scaler.scale(x_cols)
+dataset_scaler = DatasetScaler(dataset, x_cols)
 
-regression_model, score = get_regression_model(dataset, x_cols, y_cols)
+regression_model, score = get_regression_model(dataset_scaler.scaled_dataset, x_cols, y_cols)
