@@ -3,6 +3,7 @@ from scripts.config import DATA_PATH_SALES
 from scripts.regressions.helpers import test_regression, train_test_dataset_split
 from scripts.regressions.linear import build_linear_regression
 from scripts.regressions.dataset_scaler import Dataset_scaler
+from scripts.helpers import delete_useless_elements
 
 dataset = read_and_cleanse(DATA_PATH_SALES, mode_columns=["Year"])
 
