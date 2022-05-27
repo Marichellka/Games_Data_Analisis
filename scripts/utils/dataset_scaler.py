@@ -14,6 +14,10 @@ class DatasetScaler:
 
 
     def get_scaled_value(self, value: str, column: str):
+        if column not in self.__dictionary.keys():
+            return value
+        print(column)
+        print(self.__dictionary.keys())
         return self.__dictionary[column][value]
 
 
@@ -27,8 +31,8 @@ class DatasetScaler:
     def __get_column_dictionary(self, column: str):
         dictionary = dict()
         for element in self.__dataset[column]:
-            if str(element) not in dictionary:
-                dictionary[str(element)] = len(dictionary)
+            if element not in dictionary:
+                dictionary[element] = len(dictionary)
         return dictionary
 
 
