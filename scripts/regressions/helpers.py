@@ -33,6 +33,10 @@ def get_regressions(
     yield build_polynomial_regression(x_train, y_train, 3)
     yield build_polynomial_regression(x_train, y_train, 4)
     yield build_polynomial_regression(x_train, y_train, 5)
+    yield build_polynomial_regression(x_train, y_train, 6)
+    yield build_polynomial_regression(x_train, y_train, 7)
+    yield build_polynomial_regression(x_train, y_train, 8)
+    yield build_polynomial_regression(x_train, y_train, 9)
 
 
 def train_test_dataset_split(

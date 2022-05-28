@@ -3,23 +3,30 @@ from pandas import DataFrame, Series
 from typing import Callable
 
 
+def change_float_to_int(dataset: DataFrame, columns : list):
+    dataset[columns] = dataset[columns].astype('int')
+
+
 def read_and_cleanse(dataset_path : str,
     delete_columns : list = [],
     mean_columns : list = [],
     mode_columns : list = [],
+    float_columns : list = [],
     **kwargs):
     dataset = pd.read_csv(dataset_path, **kwargs)
     for column in delete_columns:
         dataset = dataset.drop(column, axis=1)
-    cleanse_data(dataset, mean_columns, mode_columns)
+    cleanse_data(dataset, mean_columns, mode_columns, float_columns)
     return dataset
 
 
 def cleanse_data(dataset : DataFrame,
     mean_columns : list = [],
-    mode_columns : list = []):
+    mode_columns : list = [],
+    float_columns : list = []):
     replace_with_mean(dataset, mean_columns)
     replace_with_mode(dataset, mode_columns)
+    change_float_to_int(dataset, float_columns)
 
 
 def replace_with_mean(dataset : DataFrame, columns : list):
