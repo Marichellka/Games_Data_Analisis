@@ -16,8 +16,6 @@ class DatasetScaler:
     def get_scaled_value(self, value: str, column: str):
         if column not in self.__dictionary.keys():
             return value
-        print(column)
-        print(self.__dictionary.keys())
         return self.__dictionary[column][value]
 
 
