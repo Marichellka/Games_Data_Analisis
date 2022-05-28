@@ -3,6 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from kneed import KneeLocator
 from sklearn.cluster import KMeans
+from sklearn import metrics
+from sklearn.feature_extraction.text import TfidfVectorizer
+from scripts.config import ASSET_PATH_ELBOWPLOT
+
 
 def draw_graph(x_range, y, labels):
     plt.figure(figsize=(10, 8))
@@ -14,7 +18,7 @@ def draw_graph(x_range, y, labels):
     plt.show()
 
 
-def get_sum_of_square_errors(features: DataFrame, max_kernels: int, kmeans_kwargs: dict):
+def get_sum_of_square_errors(features: DataFrame, max_kernels: int, **kmeans_kwargs: dict):
     sse = []
     for k in range(1, max_kernels + 1):
         kmeans = KMeans(n_clusters=k, **kmeans_kwargs).fit(features)
@@ -23,8 +27,15 @@ def get_sum_of_square_errors(features: DataFrame, max_kernels: int, kmeans_kwarg
     return sse
 
 
-def get_clusters_count(sse: list, max_kernels: int):
+def get_clusters_count(sse: list):
     """use elbow test"""
-    kl = KneeLocator(range(1, max_kernels + 1), sse,
+    kl = KneeLocator(range(1, len(sse) + 1), sse,
                      curve='convex', direction='decreasing')
     return kl.elbow
+
+
+def plot_elbow_test(sse : list):
+    plt.plot(list(range(0, len(sse))), sse)
+    plt.xlabel("Number of clusters")
+    plt.ylabel("SSE")
+    plt.savefig(ASSET_PATH_ELBOWPLOT)

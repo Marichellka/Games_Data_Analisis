@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from scripts.helpers import split_dataframe
 from scripts.regressions.linear import build_linear_regression
 from scripts.regressions.polynomial import build_polynomial_regression
+from scripts.utils.dataset_scaler import DatasetScaler
 
 
 def test_regression(
@@ -76,3 +77,8 @@ def get_best_regression(regressions : list, regressions_tests : list, beneficial
     # worst == 0, best == number of criterions in regressions_tests
     max_score = max(regressions_scores)
     return regressions[regressions_scores.index(max_score)], max_score
+
+
+def predict_unscaled(model, x : dict, scaler : DatasetScaler):
+    x_scaled = [scaler.get_scaled_value(value, key) for (key, value) in x.items()]
+    return model.predict([x_scaled])
