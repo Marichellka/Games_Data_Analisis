@@ -3,6 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from kneed import KneeLocator
 from sklearn.cluster import KMeans
+from sklearn import metrics
+from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 def draw_graph(x_range, y, labels):
     plt.figure(figsize=(10, 8))
@@ -12,6 +15,15 @@ def draw_graph(x_range, y, labels):
     plt.ylabel(labels[1])
     plt.grid(linestyle='--')
     plt.show()
+
+
+def remove_symbols(dataset: DataFrame):
+    return dataset.replace({"[^A-Za-z0-9 ]+": ""}, regex=True)
+
+
+def convert_textdata_into_vectors(dataset: DataFrame, vectorizer):
+    # vectorizer = TfidfVectorizer(stop_words='english') put in main
+    return vectorizer.fit_transform(dataset)
 
 
 def get_sum_of_square_errors(features: DataFrame, max_kernels: int, kmeans_kwargs: dict):
@@ -27,4 +39,21 @@ def get_clusters_count(sse: list, max_kernels: int):
     """use elbow test"""
     kl = KneeLocator(range(1, max_kernels + 1), sse,
                      curve='convex', direction='decreasing')
+    print(f'Точка &quot;лiктя&quot;: {kl.elbow}&#39')
     return kl.elbow
+
+
+def get_clusters(features: DataFrame, kmeans_kwargs: dict):
+    kmeans = KMeans(**kmeans_kwargs).fit(features)
+    return kmeans.predict(features)
+
+
+def print_top_terms(model: DataFrame, vectorizer, k: int):
+    print("Top terms per cluster:")
+    order_centroids = model.cluster_centers_.argsort()[:, ::-1]
+    terms = vectorizer.get_feature_names()
+    for i in range(k):
+        print("Cluster %d:" % i),
+        for ind in order_centroids[i, :15]:
+            print(' %s' % terms[ind]),
+        print()
