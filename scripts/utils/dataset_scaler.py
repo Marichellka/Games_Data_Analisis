@@ -28,7 +28,9 @@ class DatasetScaler:
         dictionary = dict()
         for element in self.__dataset[column]:
             if str(element) not in dictionary:
-                dictionary[str(element)] = len(dictionary)
+                dictionary[str(element)] = 1
+            else:
+                dictionary[str(element)] += 1
         return dictionary
 
 
