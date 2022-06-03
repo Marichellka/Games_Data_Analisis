@@ -7,7 +7,7 @@ def plot_timeline(
     date_column : str,
     value_column : str,
     label : str = "",
-    windows : list = []):
+    windows : list = []) -> None:
     series = dataset.sort_values([date_column]).groupby(date_column)[value_column].sum()
     rolling_means = [(series.rolling(window=n).mean(), n) for n in windows]
     for rolling_mean, window in rolling_means:
