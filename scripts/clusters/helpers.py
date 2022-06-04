@@ -42,8 +42,8 @@ def get_clusters_count(sse: list, max_kernels: int):
     return kl.elbow
 
 
-def get_clusters(features: DataFrame, n_clusters: int, **kmeans_kwargs: dict):
-    kmeans_kwargs['n_clusters'] = n_clusters
+def get_clusters(features: DataFrame, **kmeans_kwargs: dict):
+    print(kmeans_kwargs)
     return KMeans(**kmeans_kwargs).fit(features)
 
 

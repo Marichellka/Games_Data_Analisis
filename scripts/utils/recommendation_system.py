@@ -24,7 +24,7 @@ class RecommendationSystem:
         sse = get_sum_of_square_errors(features, max_kernels, kmeans_kwargs)
         
         n_clusters = get_clusters_count(sse, max_kernels)
-        self.__model = get_clusters(features, n_clusters, kmeans_kwargs)
+        self.__model = get_clusters(features, **kmeans_kwargs)
 
         self.__dataset['Cluster_Prediction']=self.__dataset.apply(
             cluster_predict(features, self.__model), axis=0)
