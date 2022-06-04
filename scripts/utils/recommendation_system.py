@@ -12,7 +12,8 @@ class RecommendationSystem:
 
 
     def build_system(self, x_cols:list):
-        features = self.__dataset[x_cols]
+        features = self.__dataset.loc[:, x_cols]
+        features.fillna(features.mean(numeric_only=True), inplace=True)
         kmeans_kwargs = {
             'init': 'random',
             'n_init': 10,
@@ -23,10 +24,11 @@ class RecommendationSystem:
         max_kernels = 30
         sse = get_sum_of_square_errors(features, max_kernels, kmeans_kwargs)
         
-        n_clusters = get_clusters_count(sse, max_kernels)
-        self.__model = get_clusters(features, **kmeans_kwargs)
+        n_clusters= get_clusters_count(sse, max_kernels)
+        self.__model = get_clusters(features, n_clusters=n_clusters, **kmeans_kwargs)
 
-        self.__dataset['Cluster_Prediction']=self.__dataset.apply(
+        self.__dataset['Cluster_Prediction']=""
+        self.__dataset['Cluster_Prediction']=self.__dataset.apply( lambda x:
             cluster_predict(features, self.__model), axis=0)
 
 
