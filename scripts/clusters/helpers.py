@@ -39,21 +39,14 @@ def get_clusters_count(sse: list, max_kernels: int):
     """use elbow test"""
     kl = KneeLocator(range(1, max_kernels + 1), sse,
                      curve='convex', direction='decreasing')
-    print(f'Точка &quot;лiктя&quot;: {kl.elbow}&#39')
+    print(f'Точка лiктя: {kl.elbow}')
     return kl.elbow
 
 
 def get_clusters(features: DataFrame, kmeans_kwargs: dict):
-    kmeans = KMeans(**kmeans_kwargs).fit(features)
-    return kmeans.predict(features)
+    return KMeans(**kmeans_kwargs).fit(features)
 
 
-def print_top_terms(model: DataFrame, vectorizer, k: int):
-    print("Top terms per cluster:")
-    order_centroids = model.cluster_centers_.argsort()[:, ::-1]
-    terms = vectorizer.get_feature_names()
-    for i in range(k):
-        print("Cluster %d:" % i),
-        for ind in order_centroids[i, :15]:
-            print(' %s' % terms[ind]),
-        print()
+def cluster_predict(element: DataFrame, model):
+    return model.predict(element)
+
