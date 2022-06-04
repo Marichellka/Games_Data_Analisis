@@ -1,4 +1,5 @@
 from pandas import DataFrame
+from scripts.helpers import get_key_by_value
 
 class DatasetScaler:
 
@@ -27,8 +28,8 @@ class DatasetScaler:
     def __get_column_dictionary(self, column: str):
         dictionary = dict()
         for element in self.__dataset[column]:
-            key = str(element)
-            dictionary[key] = dictionary[key] + 1 if dictionary.get(key) else 1
+            if element not in dictionary:
+                dictionary[element] = len(dictionary)
         return dictionary
 
 
@@ -36,3 +37,19 @@ class DatasetScaler:
         self.__dataset[column] = self.__dataset[column].replace(
             self.__dictionary[column].keys(), 
             self.__dictionary[column].values())
+
+
+    def scale_row(self, row: DataFrame):
+        for column in row.columns:
+            try:
+                row[column] = self.__dictionary[column][row[column]]
+            except:
+                row[column] = len(self.__dictionary[column])
+        return row
+
+    
+    def get_normal_row_from_scaled(self, scaled_row: DataFrame):
+        row = scaled_row
+        for column in scaled_row.columns:
+            row[column] = get_key_by_value(self.__dictionary[column], scaled_row[column])
+        return row

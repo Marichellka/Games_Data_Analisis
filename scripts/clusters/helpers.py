@@ -43,9 +43,8 @@ def get_clusters_count(sse: list, max_kernels: int):
 
 
 def get_clusters(features: DataFrame, **kmeans_kwargs: dict):
-    print(kmeans_kwargs)
     return KMeans(**kmeans_kwargs).fit(features)
 
 
-def cluster_predict(element: DataFrame, model):
-    return model.predict(element)
+def cluster_predict(elements: DataFrame, model):
+    return model.predict(elements)

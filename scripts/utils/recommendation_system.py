@@ -27,19 +27,18 @@ class RecommendationSystem:
         n_clusters= get_clusters_count(sse, max_kernels)
         self.__model = get_clusters(features, n_clusters=n_clusters, **kmeans_kwargs)
 
-        self.__dataset['Cluster_Prediction']=""
-        self.__dataset['Cluster_Prediction']=self.__dataset.apply( lambda x:
-            cluster_predict(features, self.__model), axis=0)
+        clusters = cluster_predict(features, self.__model)
+        self.__dataset['Cluster_Prediction']=list(clusters)
 
 
     def recommend(self, elements: DataFrame, count: int = 10) -> list:
         prediction = int(cluster_predict(elements, self.__model))
 
         recommendations = self.__dataset.loc[
-            self.__dataset['ClusterPrediction'] == prediction]
+            self.__dataset['Cluster_Prediction'] == prediction]
         recommendations = recommendations.sample(count)
 
-        return list(recommendations)
+        return recommendations
 
     def show_clusters_info(self, sse: list, max_kernels:int):
         draw_graph(x_range=range(1, max_kernels+1), y=sse, 

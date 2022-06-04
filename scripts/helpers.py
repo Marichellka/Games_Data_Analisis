@@ -1,6 +1,5 @@
 from pandas import DataFrame
 
-
 def split_dataframe(
     dataset : DataFrame,
     first_cols : list,
@@ -15,3 +14,6 @@ def delete_useless_elements(list, useless_elements):
         list.remove(elem)
     return list
     
+
+def get_key_by_value(dict: dict, value):
+    return [key for key, val in dict.items() if val == value]
