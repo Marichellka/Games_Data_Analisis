@@ -18,7 +18,7 @@ def draw_graph(x_range, y, labels):
 
 
 def remove_symbols(dataset: DataFrame):
-    return dataset.replace({"[^A-Za-z0-9 ]+": ""}, regex=True)
+    dataset.replace({"[^A-Za-z0-9 ]+": ""}, regex=True, inplace=True)
 
 
 def convert_textdata_into_vectors(dataset: DataFrame, vectorizer):
@@ -39,14 +39,13 @@ def get_clusters_count(sse: list, max_kernels: int):
     """use elbow test"""
     kl = KneeLocator(range(1, max_kernels + 1), sse,
                      curve='convex', direction='decreasing')
-    print(f'Точка лiктя: {kl.elbow}')
     return kl.elbow
 
 
-def get_clusters(features: DataFrame, kmeans_kwargs: dict):
+def get_clusters(features: DataFrame, n_clusters: int, **kmeans_kwargs: dict):
+    kmeans_kwargs['n_clusters'] = n_clusters
     return KMeans(**kmeans_kwargs).fit(features)
 
 
 def cluster_predict(element: DataFrame, model):
     return model.predict(element)
-

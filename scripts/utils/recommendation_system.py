@@ -22,12 +22,9 @@ class RecommendationSystem:
 
         max_kernels = 30
         sse = get_sum_of_square_errors(features, max_kernels, kmeans_kwargs)
-        draw_graph(x_range=range(1, max_kernels+1), y=sse, 
-                    labels=['Number of Clusters','SSE'])
         
         n_clusters = get_clusters_count(sse, max_kernels)
-        kmeans_kwargs['n_clusters'] = n_clusters
-        self.__model = get_clusters(features, kmeans_kwargs)
+        self.__model = get_clusters(features, n_clusters, kmeans_kwargs)
 
         self.__dataset['Cluster_Prediction']=self.__dataset.apply(
             cluster_predict(features, self.__model), axis=0)
@@ -41,3 +38,7 @@ class RecommendationSystem:
         recommendations = recommendations.sample(count)
 
         return list(recommendations)
+
+    def show_clusters_info(self, sse: list, max_kernels:int):
+        draw_graph(x_range=range(1, max_kernels+1), y=sse, 
+                    labels=['Number of Clusters','SSE'])
