@@ -1,31 +1,34 @@
 from pandas import DataFrame
 from scripts.helpers import get_key_by_value
 
+# TODO: improve scaling.
 class DatasetScaler:
 
-    def __init__(self, dataset: DataFrame, columns : list = None):
+    def __init__(self, dataset: DataFrame, columns : list = None) -> None:
         self.__dataset=dataset.copy(True)
         if (columns):
             self.__scale(columns)
 
 
     @property
-    def scaled_dataset(self):
+    def scaled_dataset(self) -> DataFrame:
         return self.__dataset
 
 
     def get_scaled_value(self, value: str, column: str):
+        if column not in self.__dictionary.keys():
+            return value
         return self.__dictionary[column][value]
 
 
-    def __scale(self, columns : list):
+    def __scale(self, columns : list) -> None:
         self.__dictionary = dict()
         for column in columns:
             self.__dictionary[column]=self.__get_column_dictionary(column)
             self.__replace_data(column)
 
 
-    def __get_column_dictionary(self, column: str):
+    def __get_column_dictionary(self, column: str) -> dict:
         dictionary = dict()
         for element in self.__dataset[column]:
             if element not in dictionary:
@@ -33,7 +36,7 @@ class DatasetScaler:
         return dictionary
 
 
-    def __replace_data(self, column):
+    def __replace_data(self, column) -> None:
         self.__dataset[column] = self.__dataset[column].replace(
             self.__dictionary[column].keys(), 
             self.__dictionary[column].values())
