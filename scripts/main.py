@@ -17,7 +17,9 @@ dataset_scaler = DatasetScaler(dataset, x_cols)
 recommendation = RecommendationSystem(dataset_scaler.scaled_dataset)
 recommendation.build_system(x_cols)
 
-print(dataset.iloc[[100]][x_cols])
 test = dataset.iloc[[100]][x_cols]
+print(test, '\n')
 test = dataset_scaler.scale_row(test)
-print(str(recommendation.recommend(test)[["Name"]+x_cols]))
+recommendations = recommendation.recommend(test)
+recommendations = dataset_scaler.unscale_data(recommendations, x_cols)
+print(str(recommendations[["Name"]+x_cols]))

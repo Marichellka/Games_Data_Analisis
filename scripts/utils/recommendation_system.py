@@ -31,14 +31,14 @@ class RecommendationSystem:
         self.__dataset['Cluster_Prediction']=list(clusters)
 
 
-    def recommend(self, elements: DataFrame, count: int = 10) -> list:
+    def recommend(self, elements: DataFrame, count: int = 10) -> DataFrame:
         prediction = int(cluster_predict(elements, self.__model))
 
         recommendations = self.__dataset.loc[
             self.__dataset['Cluster_Prediction'] == prediction]
         recommendations = recommendations.sample(count)
 
-        return recommendations
+        return DataFrame(recommendations)
 
     def show_clusters_info(self, sse: list, max_kernels:int):
         draw_graph(x_range=range(1, max_kernels+1), y=sse, 

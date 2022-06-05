@@ -47,9 +47,14 @@ class DatasetScaler:
                 row[column] = len(self.__dictionary[column])
         return row
 
+    def unscale_data(self, scaled_data: DataFrame, cols: list):
+        data = scaled_data
+        for i in range(len(scaled_data)):
+            data.iloc[i] = self.__get_normal_row_from_scaled(data.iloc[i], cols)
+        return data
     
-    def get_normal_row_from_scaled(self, scaled_row: DataFrame):
+    def __get_normal_row_from_scaled(self, scaled_row: DataFrame, cols: list):
         row = scaled_row
-        for column in scaled_row.columns:
+        for column in cols:
             row[column] = get_key_by_value(self.__dictionary[column], scaled_row[column])
         return row

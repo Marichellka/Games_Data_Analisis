@@ -16,4 +16,4 @@ def delete_useless_elements(list, useless_elements):
     
 
 def get_key_by_value(dict: dict, value):
-    return [key for key, val in dict.items() if val == value]
+    return [key for key, val in dict.items() if val == value][0]
