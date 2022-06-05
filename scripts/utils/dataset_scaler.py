@@ -1,4 +1,5 @@
 from pandas import DataFrame
+from scripts.helpers import get_key_by_value
 
 # TODO: improve scaling.
 class DatasetScaler:
@@ -39,3 +40,19 @@ class DatasetScaler:
         self.__dataset[column] = self.__dataset[column].replace(
             self.__dictionary[column].keys(), 
             self.__dictionary[column].values())
+
+
+    def scale_row(self, row: DataFrame):
+        for column in row.columns:
+            row[column] = self.__dictionary[column].get(
+                row[column], 
+                len(self.__dictionary[column]))
+        return row
+
+    def unscale_data(self, data: DataFrame, cols: list):
+        for i in range(len(data)):
+            data.iloc[i] = self.__get_normal_row_from_scaled(data.iloc[i], cols)
+    
+    def __get_normal_row_from_scaled(self, row: DataFrame, cols: list):
+        for column in cols:
+            row[column] = get_key_by_value(self.__dictionary[column], row[column])

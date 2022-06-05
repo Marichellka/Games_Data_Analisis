@@ -18,6 +18,15 @@ def draw_graph(x_range, y, labels) -> None:
     plt.show()
 
 
+def remove_symbols(dataset: DataFrame):
+    dataset.replace({"[^A-Za-z0-9 ]+": ""}, regex=True, inplace=True)
+
+
+def convert_textdata_into_vectors(dataset: DataFrame, vectorizer):
+    # vectorizer = TfidfVectorizer(stop_words='english') put in main
+    return vectorizer.fit_transform(dataset)
+
+
 def get_sum_of_square_errors(features: DataFrame, max_kernels: int, **kmeans_kwargs: dict) -> list:
     sse = []
     for k in range(1, max_kernels + 1):
@@ -34,6 +43,14 @@ def get_clusters_count(sse: list) -> int:
     return kl.elbow
 
 
+def get_clusters(features: DataFrame, **kmeans_kwargs: dict):
+    return KMeans(**kmeans_kwargs).fit(features)
+
+
+def cluster_predict(elements: DataFrame, model):
+    return model.predict(elements)
+
+  
 def plot_elbow_test(sse : list) -> None:
     plt.plot(list(range(0, len(sse))), sse)
     plt.xlabel("Number of clusters")
