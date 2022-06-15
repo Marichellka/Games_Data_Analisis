@@ -77,28 +77,22 @@ def devide_array(array : list, n: int):
     return devided_arrays
 
 
+def draw_subplot(fig: plt.figure, pos: int, data: list, view: tuple, labels: list):
+    ax = fig.add_subplot(pos, projection='3d')
+    ax.scatter( data[0], data[1], data[2], c=data[3], s=1)
+    ax.set_xlabel(labels[0])
+    ax.set_ylabel(labels[1])
+    ax.set_zlabel(labels[2])
+    ax.view_init(view[0], view[1])
+
+
 def show_clusters(features, cols: list, y_kmeans):
     devided_data = devide_array(list(features.tocoo().data), 3) 
     fig = plt.figure(figsize=(16,6))
-    ax = fig.add_subplot(131, projection='3d')
-    ax.scatter( devided_data[0], devided_data[1], devided_data[2], 
-                c=list(y_kmeans), s=1)
-    ax.set_xlabel(cols[0])
-    ax.set_ylabel(cols[1])
-    ax.set_zlabel(cols[2])
-    ax.view_init(60, 30)
-    ax = fig.add_subplot(132, projection='3d')
-    ax.scatter( devided_data[0], devided_data[1], devided_data[2],
-                c=list(y_kmeans), s=1)
-    ax.set_xlabel(cols[0])
-    ax.set_ylabel(cols[1])
-    ax.set_zlabel(cols[2])
-    ax.view_init(0, 60)
-    ax = fig.add_subplot(133, projection='3d')
-    ax.scatter( devided_data[0], devided_data[1], devided_data[2],
-                c=list(y_kmeans), s=1)
-    ax.set_xlabel(cols[0])
-    ax.set_ylabel(cols[1])
-    ax.set_zlabel(cols[2])
-    ax.view_init(0, -80)
+    draw_subplot(fig, 131, devided_data+list(y_kmeans), 
+                view=(60, 30), labels = cols)
+    draw_subplot(fig, 132, devided_data+list(y_kmeans), 
+                view=(0, 60), labels = cols)
+    draw_subplot(fig, 132, devided_data+list(y_kmeans), 
+                view=(0, -80), labels = cols)
     plt.savefig(ASSET_PATH_CLUSTERSPLOT)
