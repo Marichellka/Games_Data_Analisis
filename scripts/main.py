@@ -21,32 +21,30 @@ cleanse_data(
     dataset,
     mode_columns=["Year"],
     float_columns=["Year"],
-    delete_columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales", "Global_Sales"])
+    delete_columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"])
 
-y_cols, x_cols = split_list(list(dataset.columns), ["Global_Sales"])
+# y_cols, x_cols = split_list(list(dataset.columns), ["Global_Sales"])
 
-dataset_scaler = DatasetScaler(dataset, x_cols)
+# dataset_scaler = DatasetScaler(dataset, x_cols)
 
-regressions = list(get_regressions())
+# regressions = list(get_regressions())
 
-analyzer = RegressionsAnalyzer(dataset_scaler.scaled_dataset, regressions, x_cols, y_cols)
+# analyzer = RegressionsAnalyzer(dataset_scaler.scaled_dataset, regressions, x_cols, y_cols)
 
-analyzer.run()
+# analyzer.run()
 
-analyzer.dump_scores(ASSET_PATH_REGRESSIONS_DUMP)
+# analyzer.dump_scores(ASSET_PATH_REGRESSIONS_DUMP)
 
-print_coor_matrix(dataset_scaler.scaled_dataset, "Global_Sales", x_cols)
+# print_coor_matrix(dataset_scaler.scaled_dataset, "Global_Sales", x_cols)
 
 # recommendations
-delete_cols = ["Rank", "Name", "NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales", "Global_Sales"]
+x_cols = ["Platform", "Genre", "Publisher"]
+dataset_scaler = DatasetScaler(dataset, x_cols)
 
-x_cols = [col for col in dataset.columns if col not in delete_cols]
-
-recommendation = RecommendationSystem(dataset)
-recommendation.build_system(x_cols)
+recommendation = RecommendationSystem(dataset_scaler.scaled_dataset)
+recommendation.build_system(x_cols, dataset)
 
 test = dataset.iloc[[100]]
-print(test, '\n')
+print(test[["Name"]+x_cols], '\n')
 recommendations = recommendation.recommend(test, x_cols)
-print(str(recommendations[["Name"]+x_cols]))
-
+print(str(recommendations[x_cols]))
