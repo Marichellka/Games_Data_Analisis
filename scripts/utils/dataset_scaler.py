@@ -24,9 +24,9 @@ class DatasetScaler:
 
     def __scale(self) -> None:
         vectorized_data = self.__vectorize_data().tocoo().data
-        devided_data = self.__divide_array(vectorized_data, len(self.__columns))
+        divided_data = self.__divide_array(vectorized_data, len(self.__columns))
         for i in range(len(self.__columns)):
-            self.__dataset[self.__columns[i]]=devided_data[i]
+            self.__dataset[self.__columns[i]]=divided_data[i]
 
 
     def __divide_array(self, array : list, n: int):

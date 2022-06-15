@@ -3,8 +3,14 @@ from pandas import DataFrame
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from scripts.helpers import split_dataframe
+from scripts.regressions.bayesian_ridge import build_bayesian_ridge_regression
+from scripts.regressions.gradient_boosting import build_gradient_boosting_regression
 from scripts.regressions.linear import build_linear_regression
+from scripts.regressions.mlp import build_mlp_regression
 from scripts.regressions.polynomial import build_polynomial_regression
+from scripts.regressions.random_forest import build_random_forest_regression
+from scripts.regressions.tweedie import build_tweedie_regression
+from scripts.regressions.poisson import build_poisson_regression
 from scripts.utils.dataset_scaler import DatasetScaler
 
 
@@ -31,17 +37,27 @@ def get_regressions(
     y_train : DataFrame) -> Iterator:
     yield build_linear_regression(x_train, y_train)
     yield build_polynomial_regression(x_train, y_train, 2)
+    yield build_polynomial_regression(x_train, y_train, 3)
     yield build_polynomial_regression(x_train, y_train, 4)
-    yield build_polynomial_regression(x_train, y_train, 6)
-    yield build_polynomial_regression(x_train, y_train, 8)
+    yield build_bayesian_ridge_regression(x_train, y_train)
+    yield build_gradient_boosting_regression(x_train, y_train)
+    yield build_tweedie_regression(x_train, y_train)
+    yield build_poisson_regression(x_train, y_train)
+    yield build_random_forest_regression(x_train, y_train)
+    yield build_mlp_regression(x_train, y_train)
 
 
 def get_regressions() -> Iterator:
     yield build_linear_regression()
     yield build_polynomial_regression(2)
+    yield build_polynomial_regression(3)
     yield build_polynomial_regression(4)
-    yield build_polynomial_regression(6)
-    yield build_polynomial_regression(8)
+    yield build_bayesian_ridge_regression()
+    yield build_gradient_boosting_regression()
+    yield build_tweedie_regression()
+    yield build_poisson_regression()
+    yield build_random_forest_regression()
+    yield build_mlp_regression()
 
 
 def train_test_dataset_split(

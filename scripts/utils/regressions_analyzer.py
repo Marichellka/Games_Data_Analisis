@@ -1,4 +1,5 @@
 from itertools import combinations
+from numpy import ravel
 from pandas import DataFrame
 
 from scripts.regressions.helpers import test_regressions, train_test_dataset_split
@@ -41,7 +42,7 @@ class RegressionsAnalyzer:
             x_train, y_train, x_test, y_test = \
                 train_test_dataset_split(self.__dataset, x_cols, self.__y_cols, shuffle=False)
         
-            fit_regressions = [regression.fit(x_train, y_train) \
+            fit_regressions = [regression.fit(x_train, ravel(y_train)) \
                 for regression in self.__regressions]
 
             regressions_tests += list(test_regressions(fit_regressions, x_test, y_test))
@@ -80,6 +81,7 @@ class RegressionsAnalyzer:
         with open(filename, "w") as text_file:
             for i, regressions_scores in enumerate(self.__regressions_scores):
                 for j, score in enumerate(regressions_scores):
-                    text_file.write(f"Combination: {self.__x_cols_combinations[i % len(self.__x_cols_combinations)]}, ")
-                    text_file.write(f"Regression: {self.__regressions[j]}, ")
+                    text_file.write(f"Combination: {self.__x_cols_combinations[i % len(self.__x_cols_combinations)]}\n")
+                    text_file.write(f"Regression: {self.__regressions[j]}\n")
                     text_file.write(f"Score: {score}\n")
+                    text_file.write("***\n")
