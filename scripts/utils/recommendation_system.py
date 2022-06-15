@@ -15,9 +15,8 @@ class RecommendationSystem:
         self.__dataset = dataset
 
 
-    def build_system(self, x_cols:list):
-        features = vectorize_data(self.__dataset, x_cols)
-        self.__dataset['InputString'] = combine_data(self.__dataset, x_cols)
+    def build_system(self, x_cols: list):
+        features = self.__dataset[x_cols]
         cluster_algo = KMeans
         kwargs = kmeans_kwargs
 

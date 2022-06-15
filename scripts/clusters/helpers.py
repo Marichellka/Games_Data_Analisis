@@ -1,12 +1,8 @@
 from pandas import DataFrame
 import pandas as pd
 pd.options.mode.chained_assignment = None
-from functools import reduce 
-import numpy as np
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 from kneed import KneeLocator
-from sklearn import metrics
 from sklearn.feature_extraction.text import TfidfVectorizer
 from scripts.config import ASSET_PATH_ELBOWPLOT, ASSET_PATH_CLUSTERSPLOT
 
@@ -77,22 +73,23 @@ def devide_array(array : list, n: int):
     return devided_arrays
 
 
-def draw_subplot(fig: plt.figure, pos: int, data: list, view: tuple, labels: list):
+def draw_subplot(fig: plt.figure, pos: int, data: list, 
+                colors: list, view: tuple, labels: list):
     ax = fig.add_subplot(pos, projection='3d')
-    ax.scatter( data[0], data[1], data[2], c=data[3], s=1)
+    ax.scatter(data[labels[0]], data[labels[1]], 
+                data[labels[2]], c=colors, s=1)
     ax.set_xlabel(labels[0])
     ax.set_ylabel(labels[1])
     ax.set_zlabel(labels[2])
     ax.view_init(view[0], view[1])
 
 
-def show_clusters(features, cols: list, y_kmeans):
-    devided_data = devide_array(list(features.tocoo().data), 3) 
+def show_clusters(features, cols: list, y_kmeans): 
     fig = plt.figure(figsize=(16,6))
-    draw_subplot(fig, 131, devided_data+list(y_kmeans), 
+    draw_subplot(fig, 131, features, y_kmeans, 
                 view=(60, 30), labels = cols)
-    draw_subplot(fig, 132, devided_data+list(y_kmeans), 
+    draw_subplot(fig, 132, features, y_kmeans, 
                 view=(0, 60), labels = cols)
-    draw_subplot(fig, 132, devided_data+list(y_kmeans), 
+    draw_subplot(fig, 132, features, y_kmeans,
                 view=(0, -80), labels = cols)
     plt.savefig(ASSET_PATH_CLUSTERSPLOT)

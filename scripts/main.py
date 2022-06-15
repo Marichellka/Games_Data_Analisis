@@ -21,7 +21,7 @@ cleanse_data(
     dataset,
     mode_columns=["Year"],
     float_columns=["Year"],
-    delete_columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales", "Global_Sales"])
+    delete_columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"])
 
 # y_cols, x_cols = split_list(list(dataset.columns), ["Global_Sales"])
 
@@ -38,15 +38,13 @@ cleanse_data(
 # print_coor_matrix(dataset_scaler.scaled_dataset, "Global_Sales", x_cols)
 
 # recommendations
-delete_cols = ["Rank", "Name", "NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales", "Global_Sales", "Year"]
+x_cols = ["Platform", "Genre", "Publisher"]
+dataset_scaler = DatasetScaler(dataset, x_cols)
 
-x_cols = [col for col in dataset.columns if col not in delete_cols]
-
-recommendation = RecommendationSystem(dataset)
-recommendation.build_system(x_cols)
+recommendation = RecommendationSystem(dataset_scaler.scaled_dataset)
+recommendation.build_system(x_cols, dataset)
 
 test = dataset.iloc[[100]]
 print(test[["Name"]+x_cols], '\n')
 recommendations = recommendation.recommend(test, x_cols)
 print(str(recommendations[x_cols]))
-
