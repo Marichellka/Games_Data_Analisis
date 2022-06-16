@@ -16,39 +16,11 @@ class DatasetScaler:
         return self.__dataset
 
 
-    def get_scaled_value(self, value: str, column: str):
-        if column not in self.__dictionary.keys():
-            return value
-        return self.__dictionary[column][value]
-
-
     def __scale(self) -> None:
-        self.__dictionary = dict()
-        for column in self.__columns:
-            self.__dictionary[column]=self.__get_column_dictionary(column)
-            self.__replace_data(column)
-        # vectorized_data = self.__vectorize_data().tocoo().data
-        # divided_data = self.__divide_array(vectorized_data, len(self.__columns))
-        # for i in range(len(self.__columns)):
-        #     self.__dataset[self.__columns[i]]=divided_data[i]
-
-
-    def __replace_data(self, column) -> None:
-        self.__dataset[column] = self.__dataset[column].replace(
-            self.__dictionary[column].keys(), 
-            self.__dictionary[column].values())
-
-    
-    def __get_column_dictionary(self, column: str) -> dict:
-        dictionary = dict()
-        for element in self.__dataset[column]:
-            if element not in dictionary:
-                dictionary[element] = 1
-            else:
-                dictionary[element] += 1
-        for key, val in dictionary.items():
-            dictionary[key] = val/len(self.__dataset)
-        return dictionary
+        vectorized_data = self.__vectorize_data().tocoo().data
+        divided_data = self.__divide_array(vectorized_data, len(self.__columns))
+        for i in range(len(self.__columns)):
+            self.__dataset[self.__columns[i]]=divided_data[i]
 
 
     def __divide_array(self, array : list, n: int):

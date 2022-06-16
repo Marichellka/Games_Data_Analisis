@@ -1,5 +1,3 @@
-from numpy import rec
-from pandas import DataFrame
 from pickle import dump
 from scripts.cleansing import cleanse_data
 from scripts.config import ASSET_PATH_REGRESSIONS_DUMP, DATA_PATH_VGSALES
@@ -41,11 +39,10 @@ cleanse_data(
 x_cols = ["Platform", "Genre", "Publisher"]
 dataset_scaler = DatasetScaler(dataset, x_cols)
 
-# recommendation = RecommendationSystem(dataset)
 recommendation = RecommendationSystem(dataset_scaler.scaled_dataset)
 recommendation.build_system(x_cols)
 
 test = dataset.iloc[[100]]
 print(test[["Name"]+x_cols], '\n')
 recommendations = recommendation.recommend(test, dataset)
-print(str(recommendations[x_cols]))
+print(str(recommendations[["Name"]+x_cols]))
