@@ -90,6 +90,6 @@ def show_clusters(features, cols: list, y_kmeans):
                 view=(60, 30), labels = cols)
     draw_subplot(fig, 132, features, y_kmeans, 
                 view=(0, 60), labels = cols)
-    draw_subplot(fig, 132, features, y_kmeans,
+    draw_subplot(fig, 133, features, y_kmeans,
                 view=(0, -80), labels = cols)
     plt.savefig(ASSET_PATH_CLUSTERSPLOT)

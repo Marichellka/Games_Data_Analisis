@@ -41,10 +41,11 @@ cleanse_data(
 x_cols = ["Platform", "Genre", "Publisher"]
 dataset_scaler = DatasetScaler(dataset, x_cols)
 
+# recommendation = RecommendationSystem(dataset)
 recommendation = RecommendationSystem(dataset_scaler.scaled_dataset)
-recommendation.build_system(x_cols, dataset)
+recommendation.build_system(x_cols)
 
 test = dataset.iloc[[100]]
 print(test[["Name"]+x_cols], '\n')
-recommendations = recommendation.recommend(test, x_cols)
+recommendations = recommendation.recommend(test, dataset)
 print(str(recommendations[x_cols]))
