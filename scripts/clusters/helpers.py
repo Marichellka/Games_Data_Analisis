@@ -40,7 +40,7 @@ def get_clusters(features: DataFrame, algorithm: object, **kwargs: dict):
 
 
 def cluster_predict(elements, model):
-    return model.fit(elements)
+    return model.predict(elements)
 
   
 def plot_elbow_test(sse : list) -> None:

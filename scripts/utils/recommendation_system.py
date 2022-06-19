@@ -21,10 +21,10 @@ class RecommendationSystem:
         kwargs = kmeans_kwargs
 
         max_kernels = 30
-        sse = get_sum_of_square_errors(features, cluster_algo, max_kernels, **kwargs)
+        sse = get_sum_of_square_errors(features, KMeans, max_kernels, **kmeans_kwargs)
         
         n_clusters= get_clusters_count(sse)
-        self.__model = get_clusters(features, cluster_algo, n_components=n_clusters, **kwargs)
+        self.__model = get_clusters(features, cluster_algo, n_clusters=n_clusters, **kwargs)
 
         clusters = cluster_predict(features, self.__model)
         self.__dataset['Cluster_Prediction']=list(clusters)  

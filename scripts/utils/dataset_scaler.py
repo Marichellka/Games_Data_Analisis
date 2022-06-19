@@ -1,7 +1,6 @@
 from pandas import DataFrame
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# TODO: improve scaling.
 class DatasetScaler:
 
     def __init__(self, dataset: DataFrame, columns : list = None) -> None:
