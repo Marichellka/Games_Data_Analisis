@@ -4,7 +4,7 @@ from pickle import dump
 from scripts.cleansing import cleanse_data
 from scripts.config import ASSET_PATH_REGRESSIONS_DUMP, DATA_PATH_VGSALES
 from scripts.utils.dataset_scaler import DatasetScaler
-from scripts.helpers import delete_useless_elements, split_list, read_dataset
+from scripts.helpers import split_list, read_dataset
 from scripts.regressions.helpers import get_regressions
 from scripts.correlation.helpers import print_coor_matrix
 from scripts.utils.regressions_analyzer import RegressionsAnalyzer
@@ -35,7 +35,7 @@ analyzer.run()
 
 analyzer.dump_scores(ASSET_PATH_REGRESSIONS_DUMP)
 
-print_coor_matrix(dataset_scaler.scaled_dataset, "Global_Sales", x_cols)
+print_coor_matrix(dataset_scaler.scaled_dataset)
 
 # recommendations
 # x_cols = ["Platform", "Genre", "Publisher"]

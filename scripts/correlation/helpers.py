@@ -1,7 +1,7 @@
 from pandas import DataFrame
-import pingouin as pg
 
 
-def print_coor_matrix(dataFrame: DataFrame, column: str, columns: list) -> None:
-    corrmat = pg.pairwise_corr(dataFrame, columns=[columns, [column]])
-    print(corrmat)
+def print_coor_matrix(dataFrame: DataFrame) -> None:
+    print("Pearson correlation\n", dataFrame.corr("pearson"))
+    print("Kendall correlation\n", dataFrame.corr("kendall"))
+    print("Spearman correlation\n", dataFrame.corr("spearman"))

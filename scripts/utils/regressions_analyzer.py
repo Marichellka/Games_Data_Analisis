@@ -22,6 +22,10 @@ class RegressionsAnalyzer:
     def raw_scores(self) -> dict:
         return self.__regressions_scores
 
+    @property
+    def raw_tests(self) -> dict:
+        return self.__regressions_tests
+
 
     def run(self) -> None:
         x_cols_combinations = []
@@ -31,9 +35,10 @@ class RegressionsAnalyzer:
 
         self.__x_cols_combinations = x_cols_combinations
 
-        regressions_scores = self.get_regressions_scores(self.__x_cols_combinations)
+        scores, tests = self.get_regressions_scores(self.__x_cols_combinations)
 
-        self.__regressions_scores = regressions_scores
+        self.__regressions_scores = scores
+        self.__regressions_tests = tests
 
 
     def get_regressions_scores(self, x_cols_list : list) -> dict:
@@ -58,7 +63,7 @@ class RegressionsAnalyzer:
         for idx in range(0, len(x_cols_list)):
             regressions_scores.append(raw_regressions_scores[regressions_count*idx:regressions_count*idx+regressions_count])
 
-        return regressions_scores
+        return regressions_scores, regressions_tests
 
 
     # beneficial_funcs is a list of functions used to convert corresponding values into beneficial ones.
@@ -84,4 +89,5 @@ class RegressionsAnalyzer:
                     text_file.write(f"Combination: {self.__x_cols_combinations[i % len(self.__x_cols_combinations)]}\n")
                     text_file.write(f"Regression: {self.__regressions[j]}\n")
                     text_file.write(f"Score: {score}\n")
+                    text_file.write(f"Raw scores: {self.__regressions_tests[i * len(self.__regressions) + j]}\n")
                     text_file.write("***\n")
