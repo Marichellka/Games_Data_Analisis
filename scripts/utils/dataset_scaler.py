@@ -4,6 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 class DatasetScaler:
 
     def __init__(self, dataset: DataFrame, columns : list = None) -> None:
+        self.__original_dataset=dataset
         self.__dataset=dataset.copy(True)
         self.__columns = columns
         if (columns):
@@ -13,6 +14,11 @@ class DatasetScaler:
     @property
     def scaled_dataset(self) -> DataFrame:
         return self.__dataset
+
+
+    @property
+    def original_dataset(self) -> DataFrame:
+        return self.__original_dataset
 
 
     def __scale(self) -> None:

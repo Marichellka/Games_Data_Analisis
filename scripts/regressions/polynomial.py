@@ -5,7 +5,7 @@ from sklearn.preprocessing import PolynomialFeatures
 
 
 def build_polynomial_regression(x_train : DataFrame, y_train : DataFrame, degree : int) -> Pipeline:
-    regression = make_pipeline(PolynomialFeatures(degree=degree), LinearRegression()).fit(x_train, y_train)
+    regression = build_polynomial_regression().fit(x_train, y_train)
     return regression
 
 
