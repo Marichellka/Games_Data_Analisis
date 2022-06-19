@@ -1,8 +1,7 @@
-from numpy import rec
-from pandas import DataFrame
 from pickle import dump
 from scripts.cleansing import cleanse_data
-from scripts.config import ASSET_PATH_PREDICTIONS_DUMP, ASSET_PATH_REGRESSIONS_DUMP, DATA_PATH_VGSALES
+from scripts.config import ASSET_PATH_PREDICTIONS_DUMP, ASSET_PATH_REGRESSIONS_DUMP, \
+DATA_PATH_VGSALES, ASSET_PATH_RECOMMENDATIONS
 from scripts.utils.dataset_scaler import DatasetScaler
 from scripts.helpers import split_list, read_dataset
 from scripts.regressions.helpers import get_regressions
@@ -43,14 +42,19 @@ analyzer.dump_predictions(ASSET_PATH_PREDICTIONS_DUMP)
 
 print_coor_matrix(dataset_scaler.scaled_dataset)
 
+
 # recommendations
-# x_cols = ["Platform", "Genre", "Publisher"]
-# dataset_scaler = DatasetScaler(dataset, x_cols)
+x_cols = ["Platform", "Genre", "Publisher"]
+dataset_scaler = DatasetScaler(dataset, x_cols)
 
-# recommendation = RecommendationSystem(dataset_scaler.scaled_dataset)
-# recommendation.build_system(x_cols, dataset)
+recommendation = RecommendationSystem(dataset_scaler.scaled_dataset)
+recommendation.build_system(x_cols)
 
-# test = dataset.iloc[[100]]
-# print(test[["Name"]+x_cols], '\n')
-# recommendations = recommendation.recommend(test, x_cols)
-# print(str(recommendations[x_cols]))
+test = dataset.iloc[[100]]
+print(test[["Name"]+x_cols], '\n')
+recommendations = recommendation.recommend(test, dataset)
+with open(ASSET_PATH_RECOMMENDATIONS, 'w') as f:
+    f.writelines(str(test[["Name"]+x_cols]))
+    f.write('\n')
+    f.writelines(str(recommendations[["Name"]+x_cols]))
+

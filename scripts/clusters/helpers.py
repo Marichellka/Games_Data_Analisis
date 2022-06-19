@@ -4,7 +4,9 @@ pd.options.mode.chained_assignment = None
 import matplotlib.pyplot as plt
 from kneed import KneeLocator
 from sklearn.feature_extraction.text import TfidfVectorizer
-from scripts.config import ASSET_PATH_ELBOWPLOT, ASSET_PATH_CLUSTERSPLOT
+from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
+from scripts.config import ASSET_PATH_ELBOWPLOT, ASSET_PATH_CLUSTERSPLOT, \
+    ASSET_PATH_CLUSTERS_VALUATION
 
 
 def draw_graph(x_range, y, labels) -> None:
@@ -15,23 +17,6 @@ def draw_graph(x_range, y, labels) -> None:
     plt.ylabel(labels[1])
     plt.grid(linestyle='--')
     plt.show()
-
-
-def remove_symbols(dataset: DataFrame, cols: list):
-    return dataset[cols].replace([r"[^A-Za-z0-9]+"], [""], regex=True)
-
-
-def combine_data(dataset: DataFrame, cols: list):
-    combined_data = dataset[cols].apply(lambda row: \
-        ' '.join(row.values.astype(str)), axis=1)
-    return combined_data
-
-
-def vectorize_data(dataset: DataFrame, cols: list):
-    data = remove_symbols(dataset, cols)
-    combined_data = combine_data(data, cols)
-    vectorizer = TfidfVectorizer(stop_words='english')
-    return vectorizer.fit_transform(list(combined_data))
 
 
 def get_sum_of_square_errors(features: DataFrame, algorithm: object, max_kernels: int, **kwargs: dict) -> list:
@@ -65,13 +50,6 @@ def plot_elbow_test(sse : list) -> None:
     plt.savefig(ASSET_PATH_ELBOWPLOT)
 
 
-def devide_array(array : list, n: int):
-    devided_arrays = [[] for i in range(n)]
-    for i in range(0, len(array), n):
-        for j in range(n):
-            devided_arrays[j].append(array[i+j])
-    return devided_arrays
-
 
 def draw_subplot(fig: plt.figure, pos: int, data: list, 
                 colors: list, view: tuple, labels: list):
@@ -86,10 +64,15 @@ def draw_subplot(fig: plt.figure, pos: int, data: list,
 
 def show_clusters(features, cols: list, y_kmeans): 
     fig = plt.figure(figsize=(16,6))
-    draw_subplot(fig, 131, features, y_kmeans, 
+    draw_subplot(fig, 121, features, y_kmeans, 
                 view=(60, 30), labels = cols)
-    draw_subplot(fig, 132, features, y_kmeans, 
+    draw_subplot(fig, 122, features, y_kmeans, 
                 view=(0, 60), labels = cols)
-    draw_subplot(fig, 132, features, y_kmeans,
-                view=(0, -80), labels = cols)
     plt.savefig(ASSET_PATH_CLUSTERSPLOT)
+
+
+def print_cluster_evaluation(features, clusters: int):
+    with open(ASSET_PATH_CLUSTERS_VALUATION, 'w') as file:
+        file.write(f'Silhouette Score: {silhouette_score(features, clusters)}\n') # max is better
+        file.write(f'Calinski-Harabasz Index: {calinski_harabasz_score(features, clusters)}\n') # max is better
+        file.write(f'Davies-Bouldin Index: {davies_bouldin_score(features, clusters)}\n') # min is better
