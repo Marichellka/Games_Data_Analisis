@@ -33,7 +33,7 @@ analyzer.run()
 
 analyzer.dump_scores(ASSET_PATH_REGRESSIONS_DUMP)
 
-print_coor_matrix(dataset_scaler.scaled_dataset, "Global_Sales", x_cols)
+print_coor_matrix(dataset_scaler.scaled_dataset[x_cols])
 
 # recommendations
 x_cols = ["Platform", "Genre", "Publisher"]
