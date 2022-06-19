@@ -1,19 +1,20 @@
 from itertools import combinations
 from numpy import ravel
-from pandas import DataFrame
 
 from scripts.regressions.helpers import test_regressions, train_test_dataset_split
+from scripts.utils.dataset_scaler import DatasetScaler
 
 class RegressionsAnalyzer:
 
     def __init__(
         self,
-        dataset : DataFrame,
+        scaler : DatasetScaler,
         regressions : list,
         x_cols : list,
         y_cols : list) -> None:
         self.__regressions = regressions
-        self.__dataset = dataset
+        self.__original_dataset = scaler.original_dataset
+        self.__dataset = scaler.scaled_dataset
         self.__x_cols = x_cols
         self.__y_cols = y_cols
 
@@ -22,9 +23,15 @@ class RegressionsAnalyzer:
     def raw_scores(self) -> dict:
         return self.__regressions_scores
 
+
     @property
     def raw_tests(self) -> dict:
         return self.__regressions_tests
+
+
+    @property
+    def best_model(self) -> dict:
+        return self.__best_model
 
 
     def run(self) -> None:
@@ -40,12 +47,29 @@ class RegressionsAnalyzer:
         self.__regressions_scores = scores
         self.__regressions_tests = tests
 
+        best_score = 0
+        best_columns = None
+        best_regression = None
+
+        for i, regressions_scores in enumerate(self.__regressions_scores):
+            for j, score in enumerate(regressions_scores):
+                if (score > best_score):
+                    best_columns = self.__x_cols_combinations[i % len(self.__x_cols_combinations)]
+                    best_regression = self.__regressions[j]
+                    best_score = score
+        
+        x_train, y_train, _, _ = \
+                train_test_dataset_split(self.__dataset, best_columns, self.__y_cols)
+
+        self.__best_x_combination = best_columns
+        self.__best_model = best_regression.fit(x_train, ravel(y_train))
+
 
     def get_regressions_scores(self, x_cols_list : list) -> dict:
         regressions_tests = []
         for x_cols in x_cols_list:
             x_train, y_train, x_test, y_test = \
-                train_test_dataset_split(self.__dataset, x_cols, self.__y_cols, shuffle=False)
+                train_test_dataset_split(self.__dataset, x_cols, self.__y_cols)
         
             fit_regressions = [regression.fit(x_train, ravel(y_train)) \
                 for regression in self.__regressions]
@@ -91,3 +115,14 @@ class RegressionsAnalyzer:
                     text_file.write(f"Score: {score}\n")
                     text_file.write(f"Raw scores: {self.__regressions_tests[i * len(self.__regressions) + j]}\n")
                     text_file.write("***\n")
+
+
+    def dump_predictions(self, filename : str):
+        with open(filename, "w") as text_file:
+            text_file.write(f"Predictions for {self.__best_model}:\n")
+            _, _, x_test, y_test = train_test_dataset_split(self.__dataset, self.__best_x_combination, self.__y_cols)
+            predicted  = self.__best_model.predict(x_test)
+            for idx in range(len(y_test)):
+                text_file.write(f"Actual value: {y_test.iloc[idx][self.__y_cols]}\n")
+                text_file.write(f"Predicted value: {predicted[idx]}\n")
+                text_file.write(f"***\n")

@@ -1,795 +1,795 @@
 Combination: ['Platform']
 Regression: LinearRegression()
-Score: 1.8431616919092888
-Raw scores: [0.33599418941297027, -1400.7015838523403]
+Score: 1.4897662273336674
+Raw scores: [0.05861943902427865, 0.05412077339783039]
 ***
 Combination: ['Platform']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.8220787242448433
-Raw scores: [0.3495847113874262, -1457.3985648634043]
+Score: 1.5065999788692916
+Raw scores: [0.058429396346246346, 0.057187288948143844]
 ***
 Combination: ['Platform']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.8312060865599047
-Raw scores: [0.34370102271105185, -1432.8529745037108]
+Score: 1.5063714775907067
+Raw scores: [0.05843197598482686, 0.057145664077860814]
 ***
 Combination: ['Platform']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.8426058369152862
-Raw scores: [0.336352505169596, -1402.1964066183505]
+Score: 1.5037529429585006
+Raw scores: [0.05846153762668498, 0.05666865946295363]
 ***
 Combination: ['Platform']
 Regression: BayesianRidge()
-Score: 1.8429504146612226
-Raw scores: [0.33613038314661575, -1401.2697572856225]
+Score: 1.489747794858137
+Raw scores: [0.05861964711556508, 0.054117415651179335]
 ***
 Combination: ['Platform']
 Regression: GradientBoostingRegressor()
-Score: 1.8645023171778674
-Raw scores: [0.3222375759571541, -1343.3117018929186]
+Score: 1.5160866019997592
+Raw scores: [0.05832229821892863, 0.058915416946705434]
 ***
 Combination: ['Platform']
 Regression: TweedieRegressor()
-Score: 1.661859992725851
-Raw scores: [0.45286505721371134, -1888.2638264872794]
+Score: 1.1968634648650958
+Raw scores: [0.061926130658926354, 0.000764225159676668]
 ***
 Combination: ['Platform']
 Regression: PoissonRegressor()
-Score: 1.660876645353564
-Raw scores: [0.4534989434997548, -1890.9082752281392]
+Score: 1.1913130339699665
+Raw scores: [0.06198879160228835, -0.0002468675022788691]
 ***
 Combination: ['Platform']
 Regression: RandomForestRegressor()
-Score: 1.5149850959637656
-Raw scores: [0.5475436880265507, -2283.244427191099]
+Score: 0.2947651101593703
+Raw scores: [0.07211026500438153, -0.1635662644975513]
 ***
 Combination: ['Platform']
 Regression: MLPRegressor()
-Score: 1.8187689397545275
-Raw scores: [0.35171826770465225, -1466.2993416129036]
+Score: 1.4796481174698854
+Raw scores: [0.05873366624754905, 0.05227761079848914]
 ***
 Combination: ['Year']
 Regression: LinearRegression()
-Score: 1.7403940615530396
-Raw scores: [0.4022403536555269, -1677.0675338265614]
+Score: 1.5118797825074362
+Raw scores: [0.05587814562880683, 0.020452816734212842]
 ***
 Combination: ['Year']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.7188753410408637
-Raw scores: [0.41611177103079955, -1734.9363551272133]
+Score: 1.5305891706792478
+Raw scores: [0.05567594445874827, 0.023997415151985058]
 ***
 Combination: ['Year']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.718326659878278
-Raw scores: [0.41646546238563054, -1736.411885799716]
+Score: 1.527120752420407
+Raw scores: [0.05571342928848989, 0.02334030387931485]
 ***
 Combination: ['Year']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.7201514131623203
-Raw scores: [0.41528918824816347, -1731.5047017665254]
+Score: 1.5302191189624952
+Raw scores: [0.05567994378194486, 0.02392730678084809]
 ***
 Combination: ['Year']
 Regression: BayesianRidge()
-Score: 1.7392100119386447
-Raw scores: [0.403003616805165, -1680.2517173614406]
+Score: 1.5119901347780311
+Raw scores: [0.055876952999842806, 0.020473723590180404]
 ***
 Combination: ['Year']
 Regression: GradientBoostingRegressor()
-Score: 1.6435592418762295
-Raw scores: [0.4646621040303349, -1937.4787823665226]
+Score: 1.5235951934330711
+Raw scores: [0.05575153166499751, 0.022672366975472147]
 ***
 Combination: ['Year']
 Regression: TweedieRegressor()
-Score: 1.6593109850516319
-Raw scores: [0.45450820088119187, -1895.1186982492834]
+Score: 1.4036761534180224
+Raw scores: [0.05704755321207703, -4.69670612508466e-05]
 ***
 Combination: ['Year']
 Regression: PoissonRegressor()
-Score: 1.6591204463664926
-Raw scores: [0.4546310261033611, -1895.6311008856278]
+Score: 1.4024606262956714
+Raw scores: [0.05706068998619921, -0.00027725548517354426]
 ***
 Combination: ['Year']
-Regression: RandomForestRegressor()
-Score: 1.1259705416056147
-Raw scores: [0.7983106072541278, -3329.394625422765]
-***
-Combination: ['Year']
-Regression: MLPRegressor()
-Score: 1.7803135096117488
-Raw scores: [0.3765074423934677, -1569.7148961628586]
-***
-Combination: ['Genre']
-Regression: LinearRegression()
-Score: 1.758461562301927
-Raw scores: [0.39059366473301116, -1628.4798414684044]
-***
-Combination: ['Genre']
-Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
-                ('linearregression', LinearRegression())])
-Score: 1.7507681035113498
-Raw scores: [0.3955530292028073, -1649.1693332847944]
-***
-Combination: ['Genre']
-Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
-                ('linearregression', LinearRegression())])
-Score: 1.7500344232699545
-Raw scores: [0.39602597483368845, -1651.142369309734]
-***
-Combination: ['Genre']
-Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
-                ('linearregression', LinearRegression())])
-Score: 1.7522940594228194
-Raw scores: [0.3945693661020073, -1645.06568456165]
-***
-Combination: ['Genre']
-Regression: BayesianRidge()
-Score: 1.757705399029224
-Raw scores: [0.3910811033961782, -1630.513339569624]
-***
-Combination: ['Genre']
-Regression: GradientBoostingRegressor()
-Score: 1.701980644893486
-Raw scores: [0.4270024455742088, -1780.370104393497]
-***
-Combination: ['Genre']
-Regression: TweedieRegressor()
-Score: 1.6594783610078045
-Raw scores: [0.4544003068386376, -1894.6685855535823]
-***
-Combination: ['Genre']
-Regression: PoissonRegressor()
-Score: 1.6592369816421466
-Raw scores: [0.45455590502696497, -1895.3177105500713]
-***
-Combination: ['Genre']
-Regression: RandomForestRegressor()
-Score: 0.7591220873966896
-Raw scores: [1.0347887946503664, -4315.935048633555]
-***
-Combination: ['Genre']
-Regression: MLPRegressor()
-Score: 1.7187496359483796
-Raw scores: [0.41619280316294044, -1735.274405223149]
-***
-Combination: ['Publisher']
-Regression: LinearRegression()
-Score: 1.7413870421363244
-Raw scores: [0.40160025760016466, -1674.3971791511235]
-***
-Combination: ['Publisher']
-Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
-                ('linearregression', LinearRegression())])
-Score: 1.7411070651819323
-Raw scores: [0.4017807366015829, -1675.1501019995278]
-***
-Combination: ['Publisher']
-Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
-                ('linearregression', LinearRegression())])
-Score: 1.7459408195778772
-Raw scores: [0.398664797404465, -1662.1510173563718]
-***
-Combination: ['Publisher']
-Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
-                ('linearregression', LinearRegression())])
-Score: 1.7459779126730037
-Raw scores: [0.3986408864194252, -1662.051265436077]
-***
-Combination: ['Publisher']
-Regression: BayesianRidge()
-Score: 1.740815095859026
-Raw scores: [0.4019689461346039, -1675.9352751032427]
-***
-Combination: ['Publisher']
-Regression: GradientBoostingRegressor()
-Score: 1.530079586439086
-Raw scores: [0.5378134637164309, -2242.65184774631]
-***
-Combination: ['Publisher']
-Regression: TweedieRegressor()
-Score: 1.6593215881940295
-Raw scores: [0.4545013658738037, -1895.090183944621]
-***
-Combination: ['Publisher']
-Regression: PoissonRegressor()
-Score: 1.6591271363281037
-Raw scores: [0.4546267136141645, -1895.6131100300488]
-***
-Combination: ['Publisher']
 Regression: RandomForestRegressor()
 Score: 0.0
-Raw scores: [1.5241347716618479, -6357.3900875649115]
+Raw scores: [0.07221774253083042, -0.26598127911782155]
+***
+Combination: ['Year']
+Regression: MLPRegressor()
+Score: 1.519739479573126
+Raw scores: [0.05579320218071574, 0.021941880381157075]
+***
+Combination: ['Genre']
+Regression: LinearRegression()
+Score: 1.4213180773201852
+Raw scores: [0.0590157413707134, 0.035956823881209465]
+***
+Combination: ['Genre']
+Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
+                ('linearregression', LinearRegression())])
+Score: 1.4328557173519643
+Raw scores: [0.05888631408576886, 0.03807106472536981]
+***
+Combination: ['Genre']
+Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
+                ('linearregression', LinearRegression())])
+Score: 1.4248156469615256
+Raw scores: [0.058976506228922164, 0.036597743910838476]
+***
+Combination: ['Genre']
+Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
+                ('linearregression', LinearRegression())])
+Score: 1.4242530828222413
+Raw scores: [0.05898281697782352, 0.03649465557756937]
+***
+Combination: ['Genre']
+Regression: BayesianRidge()
+Score: 1.4210751048660903
+Raw scores: [0.05901846699440795, 0.03591229984639488]
+***
+Combination: ['Genre']
+Regression: GradientBoostingRegressor()
+Score: 1.4414191299479722
+Raw scores: [0.05879025117870049, 0.03964028656155194]
+***
+Combination: ['Genre']
+Regression: TweedieRegressor()
+Score: 1.2233352038057395
+Raw scores: [0.061236679596720946, -0.0003229938696942547]
+***
+Combination: ['Genre']
+Regression: PoissonRegressor()
+Score: 1.221787226364103
+Raw scores: [0.0612540445445677, -0.0006066564838798083]
+***
+Combination: ['Genre']
+Regression: RandomForestRegressor()
+Score: 0.4152939604763796
+Raw scores: [0.07030114893007415, -0.14839433217696318]
+***
+Combination: ['Genre']
+Regression: MLPRegressor()
+Score: 1.4320551924929594
+Raw scores: [0.058895294237580345, 0.037924370743843916]
+***
+Combination: ['Publisher']
+Regression: LinearRegression()
+Score: 1.4993994414637157
+Raw scores: [0.05686354427596789, 0.030955886553815648]
+***
+Combination: ['Publisher']
+Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
+                ('linearregression', LinearRegression())])
+Score: 1.4998318233209578
+Raw scores: [0.0568588003661175, 0.031036730229210385]
+***
+Combination: ['Publisher']
+Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
+                ('linearregression', LinearRegression())])
+Score: 1.543898386291672
+Raw scores: [0.05637532077822871, 0.039275981837257334]
+***
+Combination: ['Publisher']
+Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
+                ('linearregression', LinearRegression())])
+Score: 1.545300542325652
+Raw scores: [0.05635993691854546, 0.03953814697061209]
+***
+Combination: ['Publisher']
+Regression: BayesianRidge()
+Score: 1.499283613595463
+Raw scores: [0.05686481509007804, 0.030934229885234643]
+***
+Combination: ['Publisher']
+Regression: GradientBoostingRegressor()
+Score: 1.5803589184026223
+Raw scores: [0.055975291326171746, 0.04609311205059041]
+***
+Combination: ['Publisher']
+Regression: TweedieRegressor()
+Score: 1.3354427911633895
+Raw scores: [0.058662406914098054, 0.0003004416185089509]
+***
+Combination: ['Publisher']
+Regression: PoissonRegressor()
+Score: 1.3339993862174775
+Raw scores: [0.05867824333930031, 3.056405783841143e-05]
+***
+Combination: ['Publisher']
+Regression: RandomForestRegressor()
+Score: 0.16767924272245446
+Raw scores: [0.07147461193056343, -0.21803965676186277]
 ***
 Combination: ['Publisher']
 Regression: MLPRegressor()
-Score: 1.7311377660296592
-Raw scores: [0.40820715537503577, -1701.9598554330184]
+Score: 1.4996191801609862
+Raw scores: [0.0568611333964339, 0.0309969717279881]
 ***
 Combination: ['Platform', 'Year']
 Regression: LinearRegression()
-Score: 1.844679694112163
-Raw scores: [0.3350156534391081, -1396.6193244929882]
+Score: 1.5330507289558497
+Raw scores: [0.05670293085892302, 0.04040360002236554]
 ***
 Combination: ['Platform', 'Year']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.8352666911321032
-Raw scores: [0.3410834720632318, -1421.9330687301215]
+Score: 1.5917816855475801
+Raw scores: [0.05605618056769025, 0.05134870006835013]
 ***
 Combination: ['Platform', 'Year']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.855488313192742
-Raw scores: [0.32804819148279835, -1367.5524454595934]
+Score: 1.6385793067555339
+Raw scores: [0.05554084118107609, 0.060069903940368485]
 ***
 Combination: ['Platform', 'Year']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.8665171024100915
-Raw scores: [0.32093880325076113, -1337.8934779563801]
+Score: 1.6691146492987277
+Raw scores: [0.05520458339082781, 0.06576046984408679]
 ***
 Combination: ['Platform', 'Year']
 Regression: BayesianRidge()
-Score: 1.8444768380084642
-Raw scores: [0.335146418726939, -1397.1648515194695]
+Score: 1.5333172263596895
+Raw scores: [0.05669999616683646, 0.04045326447389663]
 ***
 Combination: ['Platform', 'Year']
 Regression: GradientBoostingRegressor()
-Score: 1.8540692291819085
-Raw scores: [0.32896296272087955, -1371.3686908997936]
+Score: 1.657899401518492
+Raw scores: [0.05532808665365627, 0.0636703964633909]
 ***
 Combination: ['Platform', 'Year']
 Regression: TweedieRegressor()
-Score: 1.6624906325517983
-Raw scores: [0.4524585335900491, -1886.567889994579]
+Score: 1.3232044799938278
+Raw scores: [0.059013775607693934, 0.0012966567261737394]
 ***
 Combination: ['Platform', 'Year']
 Regression: PoissonRegressor()
-Score: 1.661366606043046
-Raw scores: [0.4531831045902137, -1889.5906575023107]
+Score: 1.317157480851151
+Raw scores: [0.0590803656767745, 0.00016973807142284247]
 ***
 Combination: ['Platform', 'Year']
 Regression: RandomForestRegressor()
-Score: 1.6708349050692257
-Raw scores: [0.44707964097806685, -1864.1282093954594]
+Score: 1.3157365104576568
+Raw scores: [0.05909601352365385, -9.507394632257693e-05]
 ***
 Combination: ['Platform', 'Year']
 Regression: MLPRegressor()
-Score: 1.7881381056115528
-Raw scores: [0.3714635441354483, -1548.6727460310121]
+Score: 1.5524007112488234
+Raw scores: [0.056489847207479627, 0.0440096623849604]
 ***
 Combination: ['Platform', 'Genre']
 Regression: LinearRegression()
-Score: 1.843159853188115
-Raw scores: [0.3359953746911017, -1400.706528599263]
+Score: 1.5438437449344766
+Raw scores: [0.0576967144256711, 0.059248149654785975]
 ***
 Combination: ['Platform', 'Genre']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.8272965449430896
-Raw scores: [0.34622119501786525, -1443.3666370173778]
+Score: 1.5787150368165932
+Raw scores: [0.05730515792356349, 0.06563252539505415]
 ***
 Combination: ['Platform', 'Genre']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.8283433306633017
-Raw scores: [0.34554641504573247, -1440.551587872204]
+Score: 1.6020175317738836
+Raw scores: [0.05704350305150707, 0.06989883947357978]
 ***
 Combination: ['Platform', 'Genre']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.8395052694704572
-Raw scores: [0.33835119580285516, -1410.5345502962662]
+Score: 1.6240817943882129
+Raw scores: [0.05679575182049285, 0.07393845301695046]
 ***
 Combination: ['Platform', 'Genre']
 Regression: BayesianRidge()
-Score: 1.8427996858906721
-Raw scores: [0.33622754606508864, -1401.6751018451614]
+Score: 1.5437492396626427
+Raw scores: [0.05769777558950166, 0.05923084725122518]
 ***
 Combination: ['Platform', 'Genre']
 Regression: GradientBoostingRegressor()
-Score: 1.867005607280476
-Raw scores: [0.3206239027926636, -1336.5797752651451]
+Score: 1.6686618205515633
+Raw scores: [0.05629517962582347, 0.08210034270259703]
 ***
 Combination: ['Platform', 'Genre']
 Regression: TweedieRegressor()
-Score: 1.6627895553664307
-Raw scores: [0.4522658416908068, -1885.764017341795]
+Score: 1.2278811137069863
+Raw scores: [0.06124453889682592, 0.0014004460348739922]
 ***
 Combination: ['Platform', 'Genre']
 Regression: PoissonRegressor()
-Score: 1.6614911873455305
-Raw scores: [0.4531027968766145, -1889.2556295378563]
+Score: 1.2207729791484494
+Raw scores: [0.061324353442087386, 9.906029936701533e-05]
 ***
 Combination: ['Platform', 'Genre']
 Regression: RandomForestRegressor()
-Score: 1.6442801494647363
-Raw scores: [0.4641973919186867, -1935.5400949622235]
+Score: 1.1018057817496887
+Raw scores: [0.06266019095096083, -0.021681930537679417]
 ***
 Combination: ['Platform', 'Genre']
 Regression: MLPRegressor()
-Score: 1.8356222571595135
-Raw scores: [0.34085426676415814, -1420.9768693645904]
+Score: 1.567704548959604
+Raw scores: [0.057428790512982754, 0.06361668119288588]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: LinearRegression()
-Score: 1.84324735370947
-Raw scores: [0.335938970024682, -1400.4712194399133]
+Score: 1.5828661660786936
+Raw scores: [0.056471318548431425, 0.05448250613134553]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.8194299754705285
-Raw scores: [0.35129215025443383, -1464.521663534834]
+Score: 1.5995858500227556
+Raw scores: [0.05628616072119422, 0.05758266333113449]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.8357921834698314
-Raw scores: [0.3407447287099729, -1420.5198981761546]
+Score: 1.604568175834042
+Raw scores: [0.0562309852391162, 0.05850648421717697]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.840359832062156
-Raw scores: [0.33780032688032596, -1408.2364336456383]
+Score: 1.620213910243356
+Raw scores: [0.05605772058899176, 0.06140751011798329]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: BayesianRidge()
-Score: 1.8428077495129596
-Raw scores: [0.3362223480854857, -1401.653416898005]
+Score: 1.5828488215995744
+Raw scores: [0.05647151062539167, 0.05447929012487096]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: GradientBoostingRegressor()
-Score: 1.8459423712563967
-Raw scores: [0.3342017053389888, -1393.223693327151]
+Score: 1.598704033383131
+Raw scores: [0.05629592617211785, 0.05741915723775548]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: TweedieRegressor()
-Score: 1.6625218268113988
-Raw scores: [0.4524384251177825, -1886.4840014086656]
+Score: 1.2937532032281183
+Raw scores: [0.05967302548300154, 0.0008752946354716462]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: PoissonRegressor()
-Score: 1.6613764298731235
-Raw scores: [0.4531767719438489, -1889.5642389488976]
+Score: 1.286909811386379
+Raw scores: [0.05974881086079867, -0.0003936043796128885]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: RandomForestRegressor()
-Score: 1.5185967955080881
-Raw scores: [0.5452155109499893, -2273.531730964398]
+Score: 1.1152242242621395
+Raw scores: [0.06165009861158527, -0.03222747820186411]
 ***
 Combination: ['Platform', 'Publisher']
 Regression: MLPRegressor()
-Score: 1.7877460391379796
-Raw scores: [0.37171627838564264, -1549.7271035465694]
+Score: 1.5901264760541762
+Raw scores: [0.056390916118300174, 0.055828709942284505]
 ***
 Combination: ['Year', 'Genre']
 Regression: LinearRegression()
-Score: 1.7991424029446486
-Raw scores: [0.36436994388432764, -1519.0796428747246]
+Score: 1.3935788440992107
+Raw scores: [0.059389877273858624, 0.0318262404371199]
 ***
 Combination: ['Year', 'Genre']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.8219989780314432
-Raw scores: [0.34963611746473205, -1457.613020893448]
+Score: 1.4421753068156193
+Raw scores: [0.058844151866310875, 0.04072265584943213]
 ***
 Combination: ['Year', 'Genre']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.8248584168128668
-Raw scores: [0.34779286341188426, -1449.9233280156243]
+Score: 1.4856856863950103
+Raw scores: [0.05835554182555368, 0.04868797657132384]
 ***
 Combination: ['Year', 'Genre']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.8190622913047017
-Raw scores: [0.35152916715902066, -1465.510451380063]
+Score: 1.4916766897484166
+Raw scores: [0.05828826444436368, 0.049784732417103905]
 ***
 Combination: ['Year', 'Genre']
 Regression: BayesianRidge()
-Score: 1.7980229851738976
-Raw scores: [0.36509154399557003, -1522.0900164189925]
+Score: 1.3937949970754968
+Raw scores: [0.05938744993317408, 0.03186581094415186]
 ***
 Combination: ['Year', 'Genre']
 Regression: GradientBoostingRegressor()
-Score: 1.7916617551486276
-Raw scores: [0.36919212593540734, -1539.196836658439]
+Score: 1.4943701349144296
+Raw scores: [0.05825801776839659, 0.05027781371865814]
 ***
 Combination: ['Year', 'Genre']
 Regression: TweedieRegressor()
-Score: 1.6601359423767308
-Raw scores: [0.45397641613280215, -1892.9001970145189]
+Score: 1.2168652691022017
+Raw scores: [0.06137432392581421, -0.0005242082229499623]
 ***
 Combination: ['Year', 'Genre']
 Regression: PoissonRegressor()
-Score: 1.659691612738348
-Raw scores: [0.4542628403122845, -1894.0951022798015]
+Score: 1.21438791920691
+Raw scores: [0.06140214390911497, -0.0009777295814648035]
 ***
 Combination: ['Year', 'Genre']
 Regression: RandomForestRegressor()
-Score: 1.6175856154939268
-Raw scores: [0.48140524691814984, -2007.327876916401]
+Score: 0.9622939555165186
+Raw scores: [0.06423309236472784, -0.04712785036317357]
 ***
 Combination: ['Year', 'Genre']
 Regression: MLPRegressor()
-Score: 1.8623699612395208
-Raw scores: [0.32361213720008264, -1349.0461006772587]
+Score: 1.3911536415188497
+Raw scores: [0.059417111656621766, 0.03138226553837453]
 ***
 Combination: ['Year', 'Publisher']
 Regression: LinearRegression()
-Score: 1.792164989660415
-Raw scores: [0.3688677304423439, -1537.8435225513824]
+Score: 1.5251451819774244
+Raw scores: [0.05742975422637987, 0.048609397935133636]
 ***
 Combination: ['Year', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.7839446774031957
-Raw scores: [0.37416671567756904, -1559.9498453125063]
+Score: 1.5428072794810104
+Raw scores: [0.05723306660801402, 0.05186775684989009]
 ***
 Combination: ['Year', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.7873254556997193
-Raw scores: [0.37198739526779806, -1550.8581497821913]
+Score: 1.5954084127790997
+Raw scores: [0.05664729294043881, 0.06157177821956761]
 ***
 Combination: ['Year', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.7833899033197107
-Raw scores: [0.3745243346566645, -1561.4417612598909]
+Score: 1.5963668586564144
+Raw scores: [0.05663661955145411, 0.06174859530870569]
 ***
 Combination: ['Year', 'Publisher']
 Regression: BayesianRidge()
-Score: 1.7911823086736929
-Raw scores: [0.3695011871623126, -1540.4861792271822]
+Score: 1.5249702596199817
+Raw scores: [0.05743170218651753, 0.04857712771226519]
 ***
 Combination: ['Year', 'Publisher']
 Regression: GradientBoostingRegressor()
-Score: 1.740641042262757
-Raw scores: [0.4020811447236488, -1676.4033455191181]
+Score: 1.6148258083240108
+Raw scores: [0.05643105807457303, 0.06515395999963458]
 ***
 Combination: ['Year', 'Publisher']
 Regression: TweedieRegressor()
-Score: 1.6599775624808897
-Raw scores: [0.45407851112668535, -1893.3261172212924]
+Score: 1.2646466588174476
+Raw scores: [0.0603307026611712, 0.000551816719375875]
 ***
 Combination: ['Year', 'Publisher']
 Regression: PoissonRegressor()
-Score: 1.659581209060201
-Raw scores: [0.4543340088326657, -1894.3920033301238]
+Score: 1.2618796880989427
+Raw scores: [0.060361516038834884, 4.1357318634971385e-05]
 ***
 Combination: ['Year', 'Publisher']
 Regression: RandomForestRegressor()
-Score: 1.6222108212424482
-Raw scores: [0.4784237425416259, -1994.889627867696]
+Score: 1.2413121476669093
+Raw scores: [0.06059055908099898, -0.0037530067826687663]
 ***
 Combination: ['Year', 'Publisher']
 Regression: MLPRegressor()
-Score: 1.825920933603756
-Raw scores: [0.34710794286252705, -1447.0659743794665]
+Score: 1.5007282627636096
+Raw scores: [0.05770166449564556, 0.044104888412690446]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: LinearRegression()
-Score: 1.8144603897918474
-Raw scores: [0.3544956491377507, -1477.8860299438477]
+Score: 1.4621036273561139
+Raw scores: [0.058244051231734005, 0.03867764375992899]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.8092273585562657
-Raw scores: [0.3578689705378552, -1491.9588624461912]
+Score: 1.4654809119513197
+Raw scores: [0.058206368684450616, 0.03929959697879892]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.8111679021138338
-Raw scores: [0.35661805556794834, -1486.7402915606456]
+Score: 1.520413910450573
+Raw scores: [0.05759344571186342, 0.049415935793502674]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.8124713363885854
-Raw scores: [0.35577783456893114, -1483.235055035079]
+Score: 1.5170662828982913
+Raw scores: [0.057630797356348795, 0.04879944414969084]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: BayesianRidge()
-Score: 1.8136810902115372
-Raw scores: [0.3549980019487711, -1479.9817469325558]
+Score: 1.4622144543543847
+Raw scores: [0.05824281466327645, 0.038698053413415145]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: GradientBoostingRegressor()
-Score: 1.7442907569447264
-Raw scores: [0.3997284622941516, -1666.5884177863218]
+Score: 1.5452435476301927
+Raw scores: [0.057316405400135294, 0.05398850654728404]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: TweedieRegressor()
-Score: 1.6601238266762208
-Raw scores: [0.45398422616678963, -1892.932778938121]
+Score: 1.2546494420647512
+Raw scores: [0.06055875167405858, 0.00047334244249219726]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: PoissonRegressor()
-Score: 1.6596780062610454
-Raw scores: [0.45427161133217714, -1894.131693247333]
+Score: 1.2520551631894776
+Raw scores: [0.060587697720394906, -4.414184655132658e-06]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: RandomForestRegressor()
-Score: 1.3574225851224968
-Raw scores: [0.6491117784405921, -2706.9664964654426]
+Score: 1.0902169442654563
+Raw scores: [0.062393431340096665, -0.029808180600680467]
 ***
 Combination: ['Genre', 'Publisher']
 Regression: MLPRegressor()
-Score: 1.7570887848736159
-Raw scores: [0.3914785857793478, -1632.17155778767]
+Score: 1.4763664847469473
+Raw scores: [0.05808491131240673, 0.04130425985177466]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: LinearRegression()
-Score: 1.8417373165372957
-Raw scores: [0.33691237157314086, -1404.532058987713]
+Score: 1.5325990829980403
+Raw scores: [0.05810602935619753, 0.06147175829583684]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.8413948501216857
-Raw scores: [0.3371331325884276, -1405.4530304643952]
+Score: 1.565282155257661
+Raw scores: [0.05773724708640837, 0.06742832733130089]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.848576088476353
-Raw scores: [0.3325039561263539, -1386.1410179853779]
+Score: 1.601148281091661
+Raw scores: [0.05733254855658418, 0.07396501558593638]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.8471418248498837
-Raw scores: [0.3334285124622044, -1389.998084926287]
+Score: 1.610559686065181
+Raw scores: [0.05722635415538256, 0.07568026692461616]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: BayesianRidge()
-Score: 1.8419817986896487
-Raw scores: [0.336754773263605, -1403.874589879468]
+Score: 1.5322791824990938
+Raw scores: [0.058109638981118074, 0.06141345565551848]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: GradientBoostingRegressor()
-Score: 1.8596475226793376
-Raw scores: [0.32536707804451953, -1356.367368242963]
+Score: 1.6725671980069243
+Raw scores: [0.05652668703669167, 0.08698128607802935]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: TweedieRegressor()
-Score: 1.6632530597331003
-Raw scores: [0.45196705708036966, -1884.5175467929673]
+Score: 1.2046842542534204
+Raw scores: [0.06180608465948589, 0.0017084869713439588]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: PoissonRegressor()
-Score: 1.661915975409439
-Raw scores: [0.45282896960481295, -1888.1132760904445]
+Score: 1.1962145101209931
+Raw scores: [0.06190165374922379, 0.00016485560043855152]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: RandomForestRegressor()
-Score: 1.698730673122875
-Raw scores: [0.4290974453611378, -1789.110030892343]
+Score: 1.374703063120844
+Raw scores: [0.05988766273932745, 0.03269482645318611]
 ***
 Combination: ['Platform', 'Year', 'Genre']
 Regression: MLPRegressor()
-Score: 1.9669445597083544
-Raw scores: [0.25620116351361494, -1067.82079511338]
+Score: 1.55211399951083
+Raw scores: [0.057885831109558895, 0.06502839907019153]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: LinearRegression()
-Score: 1.844690157070565
-Raw scores: [0.3350089087972558, -1396.591187175544]
+Score: 1.6281192759417786
+Raw scores: [0.05498133947066881, 0.04791316528388401]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.835838458792724
-Raw scores: [0.34071489866883947, -1420.3954531196011]
+Score: 1.6789377249655653
+Raw scores: [0.054428506326650895, 0.05748632525564079]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.8496260569852705
-Raw scores: [0.3318271244620436, -1383.317409584522]
+Score: 1.7358551120100496
+Raw scores: [0.0538093253277511, 0.0682084008368179]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.8404664373595716
-Raw scores: [0.33773160687561987, -1407.9497473204754]
+Score: 1.7523068142625444
+Raw scores: [0.053630353980624074, 0.07130756620877021]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: BayesianRidge()
-Score: 1.844399302465498
-Raw scores: [0.3351963997598398, -1397.373362544919]
+Score: 1.6280593266487289
+Raw scores: [0.05498199163453439, 0.04790187205901031]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: GradientBoostingRegressor()
-Score: 1.8559809022708615
-Raw scores: [0.3277306582589604, -1366.2277593882152]
+Score: 1.7874496656351613
+Raw scores: [0.0532480492588687, 0.07792776309624827]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: TweedieRegressor()
-Score: 1.6632639645963496
-Raw scores: [0.45196002757740905, -1884.4882210910832]
+Score: 1.383600042311063
+Raw scores: [0.057641364310026776, 0.001850725664317432]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: PoissonRegressor()
-Score: 1.6618073792335468
-Raw scores: [0.45289897297143056, -1888.405316348743]
+Score: 1.3758597029144997
+Raw scores: [0.05772556829984876, 0.00039260349210579193]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: RandomForestRegressor()
-Score: 1.6661903025258402
-Raw scores: [0.4500736489343066, -1876.6186209161467]
+Score: 1.5550749324905533
+Raw scores: [0.05577595903932121, 0.03415309982885184]
 ***
 Combination: ['Platform', 'Year', 'Publisher']
 Regression: MLPRegressor()
-Score: 1.8542694113581124
-Raw scores: [0.32883392110264575, -1370.8303546833931]
+Score: 1.638842728496186
+Raw scores: [0.054864683411614254, 0.049933245170714735]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: LinearRegression()
-Score: 1.8438612342763059
-Raw scores: [0.3355432497700166, -1398.8203524749338]
+Score: 1.504657139864166
+Raw scores: [0.05853780578109296, 0.058141673206345446]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.839974350996334
-Raw scores: [0.3380488160389291, -1409.2730814751517]
+Score: 1.5381459834770974
+Raw scores: [0.05815917804584988, 0.06423369665060141]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.8489102728712647
-Raw scores: [0.33228853387485435, -1385.242318779741]
+Score: 1.5676524496009265
+Raw scores: [0.0578255754117124, 0.06960127773106894]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.8545156250162145
-Raw scores: [0.3286752066282838, -1370.1682291553232]
+Score: 1.5884462918179274
+Raw scores: [0.05759047844997124, 0.07338392773076063]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: BayesianRidge()
-Score: 1.843326694998679
-Raw scores: [0.33588782496998004, -1400.2578523447646]
+Score: 1.5048956744998936
+Raw scores: [0.058535108888063556, 0.05818506552558811]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: GradientBoostingRegressor()
-Score: 1.8616558974252855
-Raw scores: [0.32407243767167593, -1350.9663835881254]
+Score: 1.5708670318633098
+Raw scores: [0.05778923106922549, 0.07018604890836833]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: TweedieRegressor()
-Score: 1.6632698850454761
-Raw scores: [0.4519562111320567, -1884.4722996327257]
+Score: 1.190596878523072
+Raw scores: [0.06208859800479072, 0.0010103342711221819]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: PoissonRegressor()
-Score: 1.6619271442621755
-Raw scores: [0.4528217699287066, -1888.083240459712]
+Score: 1.1822238308755693
+Raw scores: [0.062183264398903905, -0.0005128238037885868]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: RandomForestRegressor()
-Score: 1.6232391097677217
-Raw scores: [0.47776088624827867, -1992.1243219620355]
+Score: 1.3874706852156033
+Raw scores: [0.05986272587799405, 0.03682404763170177]
 ***
 Combination: ['Platform', 'Genre', 'Publisher']
 Regression: MLPRegressor()
-Score: 1.8224459739891525
-Raw scores: [0.3493479745200371, -1456.4109452782102]
+Score: 1.4740504325513788
+Raw scores: [0.05888384783638248, 0.0525739450203242]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: LinearRegression()
-Score: 1.835274864039396
-Raw scores: [0.3410782036362283, -1421.9110898902848]
+Score: 1.8671090725521182
+Raw scores: [0.04997593887128408, 0.05654057158167469]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.8469555528176074
-Raw scores: [0.33354858731068737, -1390.499013545301]
+Score: 1.8908582842057449
+Raw scores: [0.0497294455437021, 0.06119393996657663]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 1.8354746387414003
-Raw scores: [0.3409494246843872, -1421.373849466342]
+Score: 1.9489608614369405
+Raw scores: [0.04912639825894647, 0.07257843137253372]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.8236197492425887
-Raw scores: [0.34859133443839413, -1453.2543918785873]
+Score: 1.9584840857318104
+Raw scores: [0.04902755660980088, 0.07444439103058031]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: BayesianRidge()
-Score: 1.8346262644151732
-Raw scores: [0.3414963045215458, -1423.655324438458]
+Score: 1.8672624029854248
+Raw scores: [0.049974347453039275, 0.056570614810106834]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: GradientBoostingRegressor()
-Score: 1.8278252600954183
-Raw scores: [0.3458803741708993, -1441.9447995688292]
+Score: 1.97196392506937
+Raw scores: [0.048887649209839755, 0.07708560115249097]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: TweedieRegressor()
-Score: 1.6607547761699948
-Raw scores: [0.45357750292476884, -1891.2360096769437]
+Score: 1.5748690542488095
+Raw scores: [0.05300910121851512, -0.0007202959287679889]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: PoissonRegressor()
-Score: 1.6601471008970068
-Raw scores: [0.45396922311721605, -1892.8701891701648]
+Score: 1.5708600629920664
+Raw scores: [0.05305071058262935, -0.001505808873010439]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: RandomForestRegressor()
-Score: 1.6332533616325007
-Raw scores: [0.47130549001601424, -1965.1936802775213]
+Score: 1.5113499217203652
+Raw scores: [0.053668366989960886, -0.013166095286454071]
 ***
 Combination: ['Year', 'Genre', 'Publisher']
 Regression: MLPRegressor()
-Score: 1.8208155078537156
-Raw scores: [0.3503990070973734, -1460.7956461889812]
+Score: 1.8641851180982676
+Raw scores: [0.05000628662655021, 0.05596765836615902]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: LinearRegression()
-Score: 1.8205782609753514
-Raw scores: [0.3505519413979472, -1461.4336579704175]
+Score: 1.731358513910163
+Raw scores: [0.052796564357764024, 0.0512991405888813]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('linearregression', LinearRegression())])
-Score: 1.8344936366278548
-Raw scores: [0.34158179916758713, -1424.0119912634898]
+Score: 1.7580988474359998
+Raw scores: [0.052511401488922416, 0.0564232289085107]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=3)),
                 ('linearregression', LinearRegression())])
-Score: 2.0
-Raw scores: [0.23489293524096383, -978.92706343592]
+Score: 1.833952789540131
+Raw scores: [0.051702483839392736, 0.07095866087528357]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: Pipeline(steps=[('polynomialfeatures', PolynomialFeatures(degree=4)),
                 ('linearregression', LinearRegression())])
-Score: 1.9293129082150378
-Raw scores: [0.280459313253012, -1169.0210181602358]
+Score: 1.8192632166154845
+Raw scores: [0.05185913561612555, 0.06814378689583989]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: BayesianRidge()
-Score: 1.8238800044780135
-Raw scores: [0.34842356846956585, -1452.5545052983045]
+Score: 1.731870148609104
+Raw scores: [0.05279110820971681, 0.051397182050564205]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: GradientBoostingRegressor()
-Score: 1.8517501437922181
-Raw scores: [0.3304578936741901, -1377.605248408917]
+Score: 1.8243682021699692
+Raw scores: [0.051804695295674594, 0.069122024389637]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: TweedieRegressor()
-Score: 1.6640680710931868
-Raw scores: [0.4514416837090787, -1882.325792560732]
+Score: 1.4724214052403337
+Raw scores: [0.055557907954563085, 0.0016805891683585594]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: PoissonRegressor()
-Score: 1.6625037460841288
-Raw scores: [0.4524500803327974, -1886.532624670202]
+Score: 1.4632779958371556
+Raw scores: [0.05565541462380056, -7.150705284764136e-05]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: RandomForestRegressor()
-Score: 1.6520132538319234
-Raw scores: [0.45921247108089347, -1914.7439870119008]
+Score: 1.6032094122731757
+Raw scores: [0.05416316531758264, 0.026742703615699304]
 ***
 Combination: ['Platform', 'Year', 'Genre', 'Publisher']
 Regression: MLPRegressor()
-Score: 1.7845364722932295
-Raw scores: [0.3737852323121633, -1558.358371845549]
+Score: 1.7617147809281746
+Raw scores: [0.0524728406397403, 0.05711612836520252]
 ***
